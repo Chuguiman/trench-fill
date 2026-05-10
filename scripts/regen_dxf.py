@@ -1,28 +1,52 @@
 #!/usr/bin/env python3
 """
-Regenerate DXF grid exports with explicit Z coordinates on every quadrant vertex.
+Regenerate DXF grid exports from CELLS data embedded in React components.
 
-Each 1m×1m cell LWPOLYLINE is converted to a POLYLINE3D so that every
-vertex carries group codes 10/20/30 (X, Y, Z).
+Each run does a full rebuild from scratch so the DXF always reflects the
+current CELLS (no stale entities from previous runs).
 
-Fixes:
-  1. Converts matched cells to POLYLINE3D with Z per vertex (group 30).
-  2. Adds TEXT label inside every cell that lacks one.
-  3. Updates $EXTMIN/$EXTMAX in the DXF header.
-  4. Writes clean, ezdxf-validated output (no corruption).
+Each 1m×1m quadrant is a closed POLYLINE3D with group-30 Z on every vertex.
+TEXT labels sit inside each cell at the correct Z.
 
 Run from project root:
     python3 scripts/regen_dxf.py
 """
 
-import math, re, json
+import math, re, json, zipfile, os
 from pathlib import Path
 import ezdxf
 
 # ── Coordinate origin ─────────────────────────────────────────────────────────
-# Grid cell (x, y) bottom-left corner = BNG E=(x + E_OFF), N=(y + N_OFF)
 E_OFF = 287676.925
 N_OFF = 62656.831
+
+# Layer colours (true-colour RGB as 24-bit int)
+def _rgb(r, g, b):
+    return (r << 16) | (g << 8) | b
+
+LAYER_COLORS = {
+    # Survey
+    "SURVEY-REAL":        _rgb(74, 222, 128),
+    "SURVEY-INTERP":      _rgb(148, 163, 184),
+    "SURVEY-LEVEL-TXT":   _rgb(74, 222, 128),
+    # Civils
+    "CIVILS-REAL":        _rgb(56, 189, 248),
+    "CIVILS-INTERP":      _rgb(100, 116, 139),
+    "CIVILS-BARRIER":     _rgb(248, 113, 113),
+    "CIVILS-LEVEL-TXT":   _rgb(56, 189, 248),
+    # Arch
+    "ARCH-REAL":          _rgb(167, 139, 250),
+    "ARCH-INTERP":        _rgb(100, 116, 139),
+    "ARCH-BARRIER":       _rgb(248, 113, 113),
+    "ARCH-BUILDING":      _rgb(96, 165, 250),
+    "ARCH-LEVEL-TXT":     _rgb(167, 139, 250),
+    # Corr
+    "CORR-CUT":           _rgb(59, 130, 246),
+    "CORR-FILL":          _rgb(239, 68, 68),
+    "CORR-BUILDING":      _rgb(250, 204, 21),
+    "CORR-DIFF-TXT":      _rgb(255, 255, 255),
+    "CORR-BLDG-TXT":      _rgb(250, 204, 21),
+}
 
 
 def _load_cells(tsx_path: str, array_name: str = "CELLS") -> list:
@@ -33,181 +57,174 @@ def _load_cells(tsx_path: str, array_name: str = "CELLS") -> list:
     return json.loads(m.group(1))
 
 
-def _poly_origin(entity) -> tuple[float, float]:
-    """Bottom-left corner (min E, min N) of a closed LWPOLYLINE."""
-    pts = list(entity.get_points())
-    return min(p[0] for p in pts), min(p[1] for p in pts)
-
-
-def _en_to_cell(e: float, n: float) -> tuple[int, int]:
-    return math.floor(e - E_OFF), math.floor(n - N_OFF)
-
-
-def _patch_extents(path: str, min_e: float, max_e: float, min_n: float, max_n: float) -> None:
-    """
-    ezdxf resets $EXTMIN/$EXTMAX to 1e+20 during saveas — patch raw text instead.
-    CAD apps use these for initial zoom; wrong values = empty viewport on open.
-    """
+def _patch_extents(path: str, min_e, max_e, min_n, max_n) -> None:
+    """ezdxf resets $EXTMIN/$EXTMAX during saveas — patch raw text after."""
     raw = Path(path).read_text(encoding="utf-8")
 
-    def _replace_point(text: str, var: str, x: float, y: float) -> str:
+    def _rep(text, var, x, y):
         pat = (
             rf"(  9\r?\n\{var}\r?\n"
             rf"\s*10\r?\n)[^\n]+(\r?\n"
             rf"\s*20\r?\n)[^\n]+(\r?\n"
             rf"\s*30\r?\n)[^\n]+"
         )
-        repl = rf"\g<1>{x:.6f}\g<2>{y:.6f}\g<3>0.0"
-        return re.sub(pat, repl, text, count=1)
+        return re.sub(pat, rf"\g<1>{x:.6f}\g<2>{y:.6f}\g<3>0.0", text, count=1)
 
-    raw = _replace_point(raw, "$EXTMIN", min_e, min_n)
-    raw = _replace_point(raw, "$EXTMAX", max_e, max_n)
+    raw = _rep(raw, "$EXTMIN", min_e, min_n)
+    raw = _rep(raw, "$EXTMAX", max_e, max_n)
     Path(path).write_text(raw, encoding="utf-8")
 
 
-def regen(
+def _ensure_layer(doc, name: str) -> None:
+    if name not in doc.layers:
+        color = LAYER_COLORS.get(name)
+        attribs = {}
+        if color is not None:
+            attribs["true_color"] = color
+        doc.layers.add(name, dxfattribs=attribs)
+
+
+def build_dxf(
     dxf_path: str,
-    cmap: dict,
-    text_layer: str,
-    z_getter,
-    text_formatter,
+    cells: list,
+    cell_layer_fn,          # cell → layer name for the POLYLINE3D
+    z_getter,               # cell → float
+    text_layer_fn,          # cell → layer name for TEXT  (or None = no text)
+    text_formatter,         # cell → str
     txt_height: float = 0.25,
 ) -> None:
-    """
-    cmap           : {(grid_x, grid_y): cell_dict}
-    z_getter       : cell_dict → float
-    text_formatter : cell_dict → str
-    """
-    doc = ezdxf.readfile(dxf_path)
+    """Full rebuild: create a fresh DXF from CELLS data."""
+    doc = ezdxf.new("R2010")
     msp = doc.modelspace()
 
-    # Cells that already have a TEXT entity — skip adding another.
-    existing_txt: set[tuple[int, int]] = set()
-    for ent in msp:
-        if ent.dxftype() == "TEXT":
-            cx, cy = _en_to_cell(ent.dxf.insert.x, ent.dxf.insert.y)
-            existing_txt.add((cx, cy))
+    all_e, all_n = [], []
 
-    to_delete: list = []
-    new_polys: list[tuple] = []   # (pts_3d, attribs)
-    new_texts: list[tuple] = []   # (layer, e, n, z, text)
-    all_e: list[float] = []
-    all_n: list[float] = []
+    for cell in cells:
+        cx, cy = cell["x"], cell["y"]
+        z = z_getter(cell)
+        min_e = cx + E_OFF
+        min_n = cy + N_OFF
 
-    for ent in msp:
-        if ent.dxftype() == "LWPOLYLINE":
-            min_e, min_n = _poly_origin(ent)
-            all_e.append(min_e)
-            all_n.append(min_n)
-            cx, cy = _en_to_cell(min_e, min_n)
-            cell = cmap.get((cx, cy))
-            if cell is None:
-                continue  # barrier / building — leave as LWPOLYLINE
+        poly_layer = cell_layer_fn(cell)
+        _ensure_layer(doc, poly_layer)
 
-            z = z_getter(cell)
+        # Closed 3D square: 4 corners + back to first
+        pts = [
+            (min_e,       min_n,       z),
+            (min_e + 1.0, min_n,       z),
+            (min_e + 1.0, min_n + 1.0, z),
+            (min_e,       min_n + 1.0, z),
+            (min_e,       min_n,       z),
+        ]
+        msp.add_polyline3d(pts, dxfattribs={"layer": poly_layer})
 
-            # 3D corner points for this 1m×1m square
-            pts_2d = [(p[0], p[1]) for p in ent.get_points()]
-            pts_3d = [(p[0], p[1], z) for p in pts_2d]
-            pts_3d.append(pts_3d[0])   # close
+        all_e += [min_e, min_e + 1.0]
+        all_n += [min_n, min_n + 1.0]
 
-            attribs: dict = {"layer": ent.dxf.layer}
-            for attr in ("color", "true_color", "lineweight"):
-                if ent.dxf.hasattr(attr):
-                    attribs[attr] = getattr(ent.dxf, attr)
-
-            new_polys.append((pts_3d, attribs))
-            to_delete.append(ent)
-
-            if (cx, cy) not in existing_txt:
-                new_texts.append((
-                    text_layer,
-                    min_e + 0.1, min_n + 0.2, z,
-                    text_formatter(cell),
-                ))
-                existing_txt.add((cx, cy))
-
-    # Apply changes
-    for ent in to_delete:
-        msp.delete_entity(ent)
-
-    for pts_3d, attribs in new_polys:
-        msp.add_polyline3d(pts_3d, dxfattribs=attribs)
-
-    for layer, te, tn, tz, val in new_texts:
-        msp.add_text(
-            val,
-            dxfattribs={"layer": layer, "insert": (te, tn, tz), "height": txt_height},
-        )
+        # TEXT label
+        txt_layer = text_layer_fn(cell) if text_layer_fn else None
+        if txt_layer:
+            _ensure_layer(doc, txt_layer)
+            msp.add_text(
+                text_formatter(cell),
+                dxfattribs={
+                    "layer":  txt_layer,
+                    "insert": (min_e + 0.1, min_n + 0.2, z),
+                    "height": txt_height,
+                },
+            )
 
     doc.saveas(dxf_path)
-
-    # Patch EXTMIN/EXTMAX (ezdxf resets them on save)
     if all_e:
-        _patch_extents(dxf_path, min(all_e), max(all_e) + 1, min(all_n), max(all_n) + 1)
+        _patch_extents(dxf_path, min(all_e), max(all_e), min(all_n), max(all_n))
 
-    converted = len(to_delete)
-    print(f"  {Path(dxf_path).name}: {converted} cells → POLYLINE3D, {len(new_texts)} new TEXT")
+    poly_n = sum(1 for e in msp if e.dxftype() == "POLYLINE")
+    txt_n  = sum(1 for e in msp if e.dxftype() == "TEXT")
+    print(f"  {Path(dxf_path).name}: {poly_n} POLYLINE3D  {txt_n} TEXT")
 
 
 # ── Survey ────────────────────────────────────────────────────────────────────
 print("Survey…")
 cells = _load_cells("src/components/SurveyViewer.tsx")
-cmap  = {(c["x"], c["y"]): c for c in cells}
-regen(
+
+def sv_poly_layer(c):
+    return "SURVEY-REAL" if c["i"] == 0 else "SURVEY-INTERP"
+
+build_dxf(
     "public/exports/XREF_Survey_Grid.dxf",
-    cmap,
-    text_layer="SURVEY-LEVEL-TXT",
+    cells,
+    cell_layer_fn=sv_poly_layer,
     z_getter=lambda c: c["z"],
+    text_layer_fn=lambda c: "SURVEY-LEVEL-TXT",
     text_formatter=lambda c: f"{c['z']:.3f}",
 )
 
 # ── Civils ────────────────────────────────────────────────────────────────────
 print("Civils…")
 cells = _load_cells("src/components/CivilsViewer.tsx")
-cmap  = {(c["x"], c["y"]): c for c in cells}
-regen(
+
+def cv_poly_layer(c):
+    if c["i"] == 2:  return "CIVILS-BARRIER"
+    if c["i"] == 0:  return "CIVILS-REAL"
+    return "CIVILS-INTERP"
+
+build_dxf(
     "public/exports/XREF_Civils_Grid.dxf",
-    cmap,
-    text_layer="CIVILS-LEVEL-TXT",
+    cells,
+    cell_layer_fn=cv_poly_layer,
     z_getter=lambda c: c["z"],
+    text_layer_fn=lambda c: "CIVILS-LEVEL-TXT",
     text_formatter=lambda c: f"{c['z']:.3f}",
 )
 
 # ── Arch ──────────────────────────────────────────────────────────────────────
 print("Arch…")
 cells = _load_cells("src/components/ArchViewer.tsx")
-cmap  = {(c["x"], c["y"]): c for c in cells}
-regen(
+
+def av_poly_layer(c):
+    if c.get("i") == 2: return "ARCH-BARRIER"
+    if c.get("b") == 1: return "ARCH-BUILDING"
+    if c.get("i") == 0: return "ARCH-REAL"
+    return "ARCH-INTERP"
+
+build_dxf(
     "public/exports/XREF_Arch_Grid.dxf",
-    cmap,
-    text_layer="ARCH-LEVEL-TXT",
+    cells,
+    cell_layer_fn=av_poly_layer,
     z_getter=lambda c: c["z"],
+    text_layer_fn=lambda c: "ARCH-LEVEL-TXT",
     text_formatter=lambda c: f"{c['z']:.3f}",
 )
 
 # ── Correlation ───────────────────────────────────────────────────────────────
 print("Correlation…")
 cells = _load_cells("src/components/CorrViewer.tsx")
-cmap  = {(c["x"], c["y"]): c for c in cells}
 
-regen(
+def corr_poly_layer(c):
+    t = c.get("t", "diff")
+    if t == "building": return "CORR-BUILDING"
+    return "CORR-CUT" if c["r"] <= 0 else "CORR-FILL"
+
+def corr_txt_layer(c):
+    return "CORR-BLDG-TXT" if c.get("t") == "building" else "CORR-DIFF-TXT"
+
+def corr_text(c):
+    if c.get("t") == "building":
+        return f"BLDG {c['sv']:.3f}"
+    return f"SV:{c['sv']:.3f} CV:{c['cv']:.3f} D:{c['r']:+.3f}"
+
+build_dxf(
     "public/exports/XREF_Corr_SurveyCivils.dxf",
-    cmap,
-    text_layer="CORR-DIFF-TXT",
+    cells,
+    cell_layer_fn=corr_poly_layer,
     z_getter=lambda c: c["sv"],
-    text_formatter=lambda c: (
-        f"SV:{c['sv']:.3f} CV:{c['cv']:.3f} D:{c['r']:+.3f}"
-        if c.get("t") == "diff"
-        else f"BLDG {c['sv']:.3f}"
-    ),
+    text_layer_fn=corr_txt_layer,
+    text_formatter=corr_text,
     txt_height=0.2,
 )
 
 # ── Rebuild ZIP ───────────────────────────────────────────────────────────────
 print("Rebuilding ZIP…")
-import zipfile, os
-
 dxf_files = [
     "public/exports/XREF_Survey_Grid.dxf",
     "public/exports/XREF_Civils_Grid.dxf",
@@ -218,6 +235,6 @@ zip_path = "public/exports/XREF_Grids_Export.zip"
 with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
     for f in dxf_files:
         z.write(f, os.path.basename(f))
-print(f"  {zip_path}: {os.path.getsize(zip_path)//1024} KB")
+print(f"  {zip_path}: {os.path.getsize(zip_path) // 1024} KB")
 
-print("\nDone. All 4 DXF files + ZIP regenerated.")
+print("\nDone. All 4 DXF + ZIP regenerated.")
