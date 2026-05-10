@@ -204,4 +204,20 @@ regen(
     txt_height=0.2,
 )
 
-print("\nDone. All 4 DXF files regenerated.")
+# ── Rebuild ZIP ───────────────────────────────────────────────────────────────
+print("Rebuilding ZIP…")
+import zipfile, os
+
+dxf_files = [
+    "public/exports/XREF_Survey_Grid.dxf",
+    "public/exports/XREF_Civils_Grid.dxf",
+    "public/exports/XREF_Arch_Grid.dxf",
+    "public/exports/XREF_Corr_SurveyCivils.dxf",
+]
+zip_path = "public/exports/XREF_Grids_Export.zip"
+with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
+    for f in dxf_files:
+        z.write(f, os.path.basename(f))
+print(f"  {zip_path}: {os.path.getsize(zip_path)//1024} KB")
+
+print("\nDone. All 4 DXF files + ZIP regenerated.")
