@@ -1,0 +1,59 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - button "Survey" [ref=e4] [cursor=pointer]
+      - button "Civils" [active] [ref=e5] [cursor=pointer]
+      - button "Arch Site" [ref=e6] [cursor=pointer]
+      - button "Correlación" [ref=e7] [cursor=pointer]
+      - button "Topo DXF" [ref=e8] [cursor=pointer]
+      - button "▦ Planos SVG" [ref=e9] [cursor=pointer]
+      - generic [ref=e10]:
+        - link "⬇ DXF — Civils Grid" [ref=e7700] [cursor=pointer]:
+          - /url: /exports/XREF_Civils_Grid.dxf
+        - link "⬇ ZIP todos (436KB)" [ref=e12] [cursor=pointer]:
+          - /url: /exports/XREF_Grids_Export.zip
+    - generic [ref=e7701]:
+      - generic [ref=e7702]:
+        - generic [ref=e7705]:
+          - generic [ref=e7706]: TIN · DELAUNAY BARRIER-AWARE · IDW INTERPOLACIÓN · BNG EPSG:27700
+          - generic [ref=e7707]: XREF_Civils_External levels.dxf
+        - generic [ref=e7708]:
+          - generic [ref=e7709]:
+            - generic [ref=e7710]: COLS (ΔE)
+            - generic [ref=e7711]: 121m
+          - generic [ref=e7712]:
+            - generic [ref=e7713]: FILAS (ΔN)
+            - generic [ref=e7714]: 61m
+          - generic [ref=e7715]:
+            - generic [ref=e7716]: REALES
+            - generic [ref=e7717]: "161"
+          - generic [ref=e7718]:
+            - generic [ref=e7719]: INTERPOLADOS
+            - generic [ref=e7720]: "7007"
+          - generic [ref=e7721]:
+            - generic [ref=e7722]: BARRERAS
+            - generic [ref=e7723]: "213"
+          - generic [ref=e7724]:
+            - generic [ref=e7725]: Z MIN
+            - generic [ref=e7726]: 122.15m
+          - generic [ref=e7727]:
+            - generic [ref=e7728]: Z MAX
+            - generic [ref=e7729]: 126.9m
+      - generic [ref=e7730]:
+        - generic [ref=e7731]:
+          - button "▲ TIN" [ref=e7732] [cursor=pointer]
+          - button "☰ CAPAS" [ref=e7733] [cursor=pointer]
+          - button "◎ PUNTOS" [ref=e7734] [cursor=pointer]
+        - generic [ref=e7735]:
+          - button "⟳ reset" [ref=e7736] [cursor=pointer]
+          - generic [ref=e7737]: scroll=zoom · drag=pan
+      - generic [ref=e7739]:
+        - generic:
+          - generic: 122.15m
+          - generic: 126.9m
+          - generic: 161 puntos reales
+          - generic: retaining walls
+          - generic: 1560 triángulos
+  - button "Open Next.js Dev Tools" [ref=e7695] [cursor=pointer]:
+    - img [ref=e7696]
+  - alert [ref=e7699]

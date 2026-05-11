@@ -189,6 +189,12 @@ while changed and passes < 20:
 
 print(f"  Zeros fixed in {passes} pass(es)")
 
+# Fallback: any cell still at zero gets the global min real z
+global_min_z = min(real_map.values()) if real_map else 0.0
+for c in cells:
+    if c["z"] == 0.0:
+        c["z"] = round(global_min_z, 3)
+
 # ── 6. Delaunay TIN of real points ────────────────────────────────────────────
 print("Computing Delaunay triangulation…")
 real_cells = [c for c in cells if c["i"] == 0]
@@ -217,10 +223,58 @@ for simplex in tri.simplices:
     row = []
     for i in simplex:
         row.extend([float(pts[i][0]), float(pts[i][1]), float(z_arr[i])])
+    row.append(0)  # type=0: real-point triangle
     tris_data.append(row)
     kept += 1
 
 print(f"  Triangles: {kept} kept, {skipped} removed (cross walls)")
+
+# ── 6b. Fill triangulation from 3-m interpolated grid ────────────────────────
+print("Computing fill triangulation…")
+FILL_STEP = 3
+fill_pts_list: list = []
+fill_z_list: list = []
+for cx in range(X0, X1+1, FILL_STEP):
+    for cy in range(Y0, Y1+1, FILL_STEP):
+        key = (cx, cy)
+        if key in wall_cells:
+            continue
+        c = cmap.get(key)
+        if c and c["z"] > 0:
+            fill_pts_list.append([float(cx), float(cy)])
+            fill_z_list.append(c["z"])
+
+fill_pts = np.array(fill_pts_list, dtype=float)
+fill_z   = np.array(fill_z_list)
+
+fill_tri = Delaunay(fill_pts)
+fill_tris_data: list[list] = []
+fill_kept = fill_skipped = 0
+for simplex in fill_tri.simplices:
+    v = fill_pts[simplex]
+    if any(edge_crosses_wall(v[a], v[b]) for a,b in ((0,1),(1,2),(0,2))):
+        fill_skipped += 1
+        continue
+    row = []
+    for i in simplex:
+        row.extend([float(fill_pts[i][0]), float(fill_pts[i][1]), float(fill_z[i])])
+    row.append(1)  # type=1: interpolated fill triangle
+    fill_tris_data.append(row)
+    fill_kept += 1
+
+print(f"  Fill triangles: {fill_kept} kept, {fill_skipped} removed")
+
+# Merge: fill drawn first (underneath), real triangles on top
+tris_data = fill_tris_data + tris_data
+
+# ── 6c. Site boundary: alpha shape of real points (4 m buffer) ───────────────
+print("Computing site boundary…")
+from shapely.ops import unary_union
+from shapely.geometry import Point as SPoint
+site_union = unary_union([SPoint(c["x"], c["y"]).buffer(8) for c in real_cells]).buffer(-4)
+geoms = [site_union] if site_union.geom_type == "Polygon" else list(site_union.geoms)
+boundary_data = [[[round(x,1),round(y,1)] for x,y in g.exterior.coords] for g in geoms]
+print(f"  Boundary: {len(geoms)} polygon(s), {sum(len(r) for r in boundary_data)} vertices")
 
 # ── 7. Wall polylines in grid coords (for canvas drawing) ────────────────────
 walls_data: list[list] = []
@@ -234,9 +288,10 @@ print(f"  Wall polylines for canvas: {len(walls_data)}")
 
 # ── 8. Write back to CivilsViewer.tsx ────────────────────────────────────────
 print("Writing TSX…")
-cells_json = json.dumps(cells, separators=(",",":"))
-tris_json  = json.dumps(tris_data, separators=(",",":"))
-walls_json = json.dumps(walls_data, separators=(",",":"))
+cells_json    = json.dumps(cells, separators=(",",":"))
+tris_json     = json.dumps(tris_data, separators=(",",":"))
+walls_json    = json.dumps(walls_data, separators=(",",":"))
+boundary_json = json.dumps(boundary_data, separators=(",",":"))
 
 tsx = Path(TSX_PATH).read_text()
 
@@ -247,14 +302,15 @@ tsx = re.sub(
     tsx, flags=re.DOTALL
 )
 
-# Remove old TRIS / WALLS if present
-tsx = re.sub(r"\nconst TRIS:[^=]+=.*?;\n", "\n", tsx, flags=re.DOTALL)
-tsx = re.sub(r"\nconst WALLS:[^=]+=.*?;\n", "\n", tsx, flags=re.DOTALL)
+# Remove old TRIS / WALLS / BOUNDARY if present
+tsx = re.sub(r"\nconst TRIS:[^=]+=.*?;\n",     "\n", tsx, flags=re.DOTALL)
+tsx = re.sub(r"\nconst WALLS:[^=]+=.*?;\n",    "\n", tsx, flags=re.DOTALL)
+tsx = re.sub(r"\nconst BOUNDARY:[^=]+=.*?;\n", "\n", tsx, flags=re.DOTALL)
 
-# Insert TRIS + WALLS before LAYERS constant
+# Insert BOUNDARY + TRIS + WALLS before LAYERS constant
 tsx = tsx.replace(
     "const LAYERS",
-    f"const TRIS:number[][]={tris_json};\nconst WALLS:number[][][]={walls_json};\nconst LAYERS",
+    f"const BOUNDARY:number[][][]={boundary_json};\nconst TRIS:number[][]={tris_json};\nconst WALLS:number[][][]={walls_json};\nconst LAYERS",
     1
 )
 
@@ -265,4 +321,4 @@ interp = sum(1 for c in cells if c["i"]==1)
 bar = sum(1 for c in cells if c["i"]==2)
 zeros = sum(1 for c in cells if c["z"]==0)
 print(f"\nDone.  Real={r}  Interp={interp}  Barrier={bar}  Zeros={zeros}")
-print(f"       Triangles={len(tris_data)}  Wall polylines={len(walls_data)}")
+print(f"       Triangles={len(tris_data)}  (real={kept}  fill={fill_kept})  Wall polylines={len(walls_data)}")

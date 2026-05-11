@@ -1,0 +1,1199 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1818" viewBox="0 0 1600 1818">
+  <rect width="1600" height="1818" fill="#0a0a0a" />
+  <g id="polylines" stroke="#ffffff" stroke-width="0.6" fill="none" opacity="0.55">
+    <path d="M1017.063,1505.289 L1015.023,1566.593" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M1131.096,1501.726 L1128.874,1571.110" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M1390.251,1385.002 L1336.495,1384.872" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M1272.598,1071.001 L1216.730,1071.051" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M1211.442,1433.658 L1137.594,1433.377" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M895.498,1457.860 L983.815,1458.090" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M983.815,1458.090 L1018.538,1458.100" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1052.261,1458.534 L1074.335,1458.819" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M989.438,1231.361 L989.710,1104.165" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M984.065,1457.655 L984.364,1328.970" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1070.506,1699.257 L1068.923,1745.774" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1133.574,1701.406 L1131.993,1747.895" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1053.411,1328.482 L1053.108,1458.536" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1474.272,1501.700 L1464.723,1454.280" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1427.348,1532.373 L1419.707,1478.092 L1416.957,1464.886" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1197.475,1710.763 L1196.481,1750.041" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1254.062,1717.168 L1248.775,1751.613" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1103.062,958.242 L1095.747,1104.433" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1094.783,1104.380 L1032.617,1103.960" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1032.607,1109.350 L989.675,1109.060" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1137.919,1433.378 L1138.164,1328.690 L1129.392,1328.690" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1132.604,1459.570 L1131.210,1501.722" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1032.511,1162.703 L1032.616,1104.290" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1031.727,1224.642 L1031.636,1264.412" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1028.321,1223.735 L1031.446,1223.742 L1031.585,1162.708" data-layer="EXP - UNDERBUILD" />
+    <path d="M984.365,1328.326 L989.577,1328.337" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1053.411,1328.482 L1066.488,1328.491" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1015.003,1567.187 L1014.615,1578.861 L974.910,1577.578" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1017.063,1505.289 L1018.612,1458.749" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1128.534,1570.966 L1127.551,1600.495" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M931.723,1563.583 L940.231,1563.866 L942.226,1503.920 L925.666,1503.369" data-layer="EXP - UNDERBUILD" />
+    <path d="M1375.119,1535.823 L1373.584,1515.802" data-layer="EXP - UNDERBUILD" />
+    <path d="M1427.497,1532.861 L1434.532,1582.914" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1478.275,1523.701 L1484.989,1556.226" data-layer="EXP - UNDERBUILD" />
+    <path d="M1309.476,1518.716 L1290.363,1517.936 L1300.912,1464.152" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1540.222,1429.630 L1542.008,1451.206 L1544.705,1480.333 L1547.731,1501.575" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1300.746,1382.965 L1336.499,1383.051" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1337.359,1398.834 L1337.327,1411.902 L1392.297,1412.036 L1392.328,1399.375" data-layer="EXP - UNDERBUILD" />
+    <path d="M1325.366,1300.871 L1325.286,1336.240 L1382.954,1336.371" data-layer="EXP - UNDERBUILD" />
+    <path d="M1540.222,1429.630 L1536.420,1386.968" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1536.420,1386.968 L1534.615,1366.222" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1509.219,1316.635 L1528.033,1316.649 L1528.033,1365.575 L1522.665,1365.562" data-layer="EXP - UNDERBUILD" />
+    <path d="M1534.615,1366.222 L1528.931,1366.222" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1502.427,1112.598 L1501.678,1108.793 L1498.979,1075.074" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1513.432,1170.781 L1511.622,1144.660 L1503.049,1112.419" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1302.041,1182.478 L1301.916,1237.448 L1297.118,1237.437" data-layer="EXP - UNDERBUILD" />
+    <path d="M1259.348,1180.337 L1265.937,1180.331" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1266.510,1146.863 L1266.537,1182.398" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1266.510,1146.863 L1266.495,1127.624" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1351.032,1035.650 L1351.061,1054.375 L1370.236,1054.345 L1370.208,1036.069" data-layer="EXP - UNDERBUILD" />
+    <path d="M1414.268,1051.429 L1414.272,1054.351 L1433.733,1054.321 L1433.616,1027.078" data-layer="EXP - UNDERBUILD" />
+    <path d="M1371.347,958.494 L1371.348,1009.421 L1385.398,1009.423" data-layer="EXP - UNDERBUILD" />
+    <path d="M1413.291,1010.318 L1413.289,951.305 L1389.315,951.306" data-layer="EXP - UNDERBUILD" />
+    <path d="M1413.577,1010.318 L1413.588,1016.902" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1414.259,1055.855 L1414.270,1069.636" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1489.147,1000.250 L1493.281,1000.247 L1496.618,1040.499" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1342.616,1016.654 L1304.369,1016.723" data-layer="EXP - UNDERBUILD" />
+    <path d="M1343.516,1017.551 L1350.106,1017.540" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1272.598,1071.001 L1322.619,1070.963" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1513.432,1170.781 L1520.816,1230.579" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1007.276,1694.502 L1005.639,1743.684" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M953.954,1683.591 L952.013,1741.905" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1199.198,1658.970 L1197.472,1709.577" data-layer="EXP - UNDERBUILD" />
+    <path d="M1135.093,1649.602 L1133.142,1701.381" data-layer="EXP - UNDERBUILD" />
+    <path d="M1006.976,1694.491 L1008.456,1637.296" data-layer="EXP - UNDERBUILD" />
+    <path d="M1382.054,1336.687 L1382.156,1317.907" data-layer="EXP - UNDERBUILD" />
+    <path d="M895.467,1416.097 L898.636,1351.665" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M898.654,1351.613 L898.857,1262.647" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1202.744,1333.657 L1220.459,1333.698 L1220.331,1389.955 L1213.398,1389.939" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1223.452,1334.153 L1223.319,1392.957 L1216.355,1392.941" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M898.857,1262.647 L903.016,1262.654 L903.073,1232.139" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M913.590,1054.056 L909.097,1053.831 L914.044,954.967" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M914.044,954.967 L914.740,941.070 L902.884,940.524 L903.808,916.554" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M924.762,1687.489 L930.981,1687.701 L932.881,1630.963 L922.476,1630.609 L922.667,1624.997" data-layer="EXP - UNDERBUILD" />
+    <path d="M1008.456,1637.296 L1009.059,1618.737" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1047.090,1695.242 L1048.984,1639.568 L1027.129,1638.932" data-layer="EXP - UNDERBUILD" />
+    <path d="M1253.766,1717.123 L1262.075,1662.785 L1237.568,1659.037" data-layer="EXP - UNDERBUILD" />
+    <path d="M884.589,1685.637 L886.090,1654.181" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M886.090,1654.181 L889.727,1577.979" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1560.000,1622.549 L1506.859,1719.584 L1455.058,1745.143 L1414.519,1758.199 L1381.799,1763.641 L1335.431,1766.057 L874.057,1744.809 L876.971,1686.629" data-layer="Rollover" />
+    <path d="M884.589,1685.637 L875.142,1685.248" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1301.891,950.229 L1346.739,950.152" data-layer="Working" />
+    <path d="M1300.912,1464.152 L1369.339,1464.562" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1018.533,1458.100 L1052.261,1458.534" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1074.335,1458.819 L1132.592,1459.569" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1371.734,1495.020 L1369.448,1465.204" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1324.432,1070.666 L1324.398,1116.330" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1324.398,1116.330 L1324.373,1127.108 L1266.708,1126.976" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M903.073,1232.139 L903.249,1154.643 L909.465,1154.656 L914.510,1053.846" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1481.797,999.810 L1488.094,999.826 L1488.092,951.468 L1469.217,951.468" data-layer="EXP - UNDERBUILD" />
+    <path d="M1324.390,1119.866 L1384.042,1120.002" data-layer="EXP - DESIGN LINES" />
+    <path d="M1444.875,1120.140 L1503.879,1120.274" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1322.864,1112.675 L1384.033,1112.814" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1444.870,1112.952 L1503.895,1113.086" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1324.432,1070.666 L1350.177,1070.659" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1371.383,1055.856 L1413.258,1055.855" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1371.383,1048.668 L1413.258,1048.667" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1384.017,1120.002 L1445.211,1120.141" data-layer="EXP - DESIGN LINES" />
+    <path d="M1384.033,1112.814 L1445.202,1112.953" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1222.340,1219.238 L1224.454,1217.731" data-layer="Working" />
+    <path d="M1223.397,1218.485 L1223.355,1237.112 L1257.570,1237.190 L1257.700,1180.293" data-layer="EXP - UNDERBUILD" />
+    <path d="M1265.983,1164.428 L1306.452,1164.531" data-layer="EXP - DESIGN LINES" />
+    <path d="M1414.268,1051.429 L1414.267,1017.506" data-layer="EXP-EW-TANKING" />
+    <path d="M1444.410,1138.722 L1443.509,1139.618" data-layer="Working" />
+    <path d="M1443.395,1189.766 L1444.291,1190.667" data-layer="Working" />
+    <path d="M1424.712,1190.987 L1424.715,1189.724" data-layer="Working" />
+    <path d="M1443.959,1139.170 L1443.843,1190.217 L1424.714,1190.173" data-layer="EXP - UNDERBUILD" />
+    <path d="M1530.168,1314.997 L1519.387,1314.971" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1519.551,1247.374 L1519.387,1314.971" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1519.551,1247.374 L1530.168,1314.997" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1473.623,1366.229 L1528.817,1366.363" data-layer="Working" />
+    <path d="M1465.329,1384.177 L1536.192,1384.350" data-layer="EXP - DESIGN LINES" />
+    <path d="M1465.372,1391.365 L1536.827,1391.539" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1336.424,1425.043 L1338.536,1425.049" data-layer="Working" />
+    <path d="M1337.049,1419.963 L1337.946,1420.863" data-layer="Working" />
+    <path d="M1390.789,1420.991 L1391.690,1420.095" data-layer="Working" />
+    <path d="M1391.239,1420.543 L1337.498,1420.413 L1337.480,1425.046" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1471.444,1484.394 L1519.544,1469.297" data-layer="EXP - DESIGN LINES" />
+    <path d="M1519.544,1469.297 L1524.925,1486.442" data-layer="EXP - DESIGN LINES" />
+    <path d="M1538.810,1433.649 L1464.618,1433.657" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1532.183,1507.548 L1531.555,1505.548" data-layer="Working" />
+    <path d="M1547.731,1501.575 L1488.959,1520.001 L1477.795,1522.729 L1435.790,1531.187" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1374.306,1536.967 L1419.135,1533.529 L1435.838,1531.178" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1531.011,1506.817 L1540.462,1536.929" data-layer="EXP - TANKING" />
+    <path d="M1377.865,1571.622 L1375.119,1535.823" data-layer="EXP - TANKING" />
+    <path d="M1289.278,1518.206 L1278.050,1576.220" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1304.071,1518.810 L1287.062,1571.527 L1278.856,1576.376 L1278.050,1576.220" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1371.734,1495.020 L1373.320,1515.687" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1322.834,1754.224 L1322.837,1754.224 L1326.900,1727.655" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1254.744,1716.667 L1283.071,1662.357" data-layer="Working" />
+    <path d="M1263.099,1662.032 L1274.283,1719.655" data-layer="Working" />
+    <path d="M1433.953,1036.787 L1495.709,1036.787" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1433.953,1043.974 L1496.305,1043.974" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1444.838,1070.567 L1444.870,1112.952" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1265.983,1164.428 L1222.464,1164.329 L1222.430,1179.599" data-layer="EXP - DESIGN LINES" />
+    <path d="M1265.995,1159.037 L1222.477,1158.938 L1217.417,1166.220 L1222.430,1179.599" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1229.317,1158.953 L1223.926,1158.941" data-layer="EXP - STEPS" />
+    <path d="M1229.312,1160.750 L1223.922,1160.738" data-layer="EXP - STEPS" />
+    <path d="M1229.308,1162.547 L1223.918,1162.535" data-layer="EXP - STEPS" />
+    <path d="M1382.307,1337.510 L1382.281,1349.027 L1444.800,1349.179" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1202.831,1068.143 L1216.708,1068.143" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1246.321,1035.229 L1246.323,1037.527" data-layer="Working" />
+    <path d="M1216.703,1061.842 L1219.003,1061.840" data-layer="Working" />
+    <path d="M1217.296,1035.869 L1218.195,1036.767" data-layer="Working" />
+    <path d="M1217.853,1061.841 L1217.745,1036.318 L1246.322,1036.318" data-layer="EXP - UNDERBUILD" />
+    <path d="M1309.516,1517.744 L1363.991,1519.967" data-layer="Working" />
+    <path d="M1309.516,1517.744 L1310.337,1499.867 L1372.295,1502.322" data-layer="EXP - DESIGN LINES" />
+    <path d="M1297.231,1492.065 L1371.741,1495.106" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1488.217,1276.092 L1488.131,1311.570 L1466.568,1311.517" data-layer="Working" />
+    <path d="M1518.094,1489.229 L1518.453,1490.372" data-layer="Working" />
+    <path d="M1373.320,1515.687 L1417.633,1512.288" data-layer="Working" />
+    <path d="M1371.945,1497.771 L1422.158,1493.919" data-layer="EXP - DESIGN LINES" />
+    <path d="M1430.713,1510.520 L1474.913,1501.619" data-layer="Working" />
+    <path d="M1422.157,1493.913 L1469.507,1484.362" data-layer="EXP - DESIGN LINES" />
+    <path d="M1529.799,1554.767 L1540.674,1589.421" data-layer="Working" />
+    <path d="M1466.539,1608.349 L1459.368,1572.737" data-layer="Working" />
+    <path d="M1198.373,1710.194 L1226.549,1656.443" data-layer="Working" />
+    <path d="M1218.240,1710.775 L1200.118,1659.003" data-layer="Working" />
+    <path d="M1187.904,1652.304 L1182.373,1652.115" data-layer="EXP - STEPS" />
+    <path d="M1200.118,1659.003 L1200.273,1654.346" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1200.273,1654.346 L1196.292,1640.619" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1196.292,1654.210 L1196.292,1640.619" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1123.768,1643.222 L1118.237,1643.033" data-layer="EXP - STEPS" />
+    <path d="M1135.993,1649.630 L1136.148,1644.972" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1136.148,1644.972 L1132.440,1623.392" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1132.167,1644.837 L1132.440,1623.392" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1092.578,1639.163 L1049.192,1696.877" data-layer="Working" />
+    <path d="M1050.162,1637.832 L1090.541,1698.650" data-layer="Working" />
+    <path d="M1069.676,1638.479 L1049.328,1659.884" data-layer="Working" />
+    <path d="M1050.102,1637.813 L1092.581,1639.259" data-layer="Working" />
+    <path d="M1006.667,1712.803 L1042.572,1714.039 L1042.915,1703.737" data-layer="EXP - DESIGN LINES" />
+    <path d="M1006.419,1719.986 L1040.552,1721.161 L1047.964,1714.085 L1048.305,1703.915" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M933.848,1622.110 L976.326,1623.555" data-layer="Working" />
+    <path d="M882.698,1709.956 L923.505,1711.348 L930.981,1704.422 L931.146,1699.615" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M883.040,1702.804 L924.673,1704.194 L925.211,1688.404" data-layer="EXP - DESIGN LINES" />
+    <path d="M891.631,1578.074 L887.324,1577.859" data-layer="Working" />
+    <path d="M889.727,1577.979 L890.916,1553.054" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1170.331,1534.601 L1169.433,1534.571" data-layer="Working" />
+    <path d="M1170.435,1504.490 L1171.362,1503.622" data-layer="Working" />
+    <path d="M1170.898,1504.056 L1169.882,1534.586" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1054.959,1500.731 L1054.779,1506.119" data-layer="EXP - STEPS" />
+    <path d="M1056.755,1500.791 L1056.575,1506.179" data-layer="EXP - STEPS" />
+    <path d="M1055.206,1508.071 L1056.133,1507.203" data-layer="Working" />
+    <path d="M1053.246,1566.947 L1054.114,1567.875" data-layer="Working" />
+    <path d="M1053.680,1567.411 L1055.670,1507.637" data-layer="EXP - UNDERBUILD" />
+    <path d="M941.634,1496.957 L941.455,1502.345" data-layer="EXP - STEPS" />
+    <path d="M943.430,1497.017 L943.251,1502.405" data-layer="EXP - STEPS" />
+    <path d="M890.916,1553.054 L893.384,1501.343" data-layer="Working" />
+    <path d="M890.916,1553.054 L893.384,1501.343" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M894.908,1483.245 L1017.017,1487.308" data-layer="EXP - DESIGN LINES" />
+    <path d="M895.251,1476.064 L1017.256,1480.125" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1018.304,1487.351 L1129.979,1491.068" data-layer="EXP - DESIGN LINES" />
+    <path d="M1018.543,1480.168 L1130.218,1483.884" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M893.384,1501.343 L895.504,1457.267" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M960.091,1509.563 L961.718,1457.099" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1073.623,1513.364 L1075.286,1459.705" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1192.756,1494.498 L1171.330,1493.785 L1171.235,1496.699" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1129.381,1509.042 L1090.889,1507.761" data-layer="Working" />
+    <path d="M1184.653,1294.672 L1184.553,1329.394" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1219.537,1329.327 L1184.553,1329.394" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1184.653,1294.672 L1184.929,1295.404 L1209.026,1323.437 L1219.537,1329.327" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1223.452,1334.153 L1248.672,1392.726 L1216.295,1433.915" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1216.355,1392.941 L1216.295,1433.915" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1212.426,1389.293 L1212.332,1430.571 L1211.742,1433.659" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1213.359,1406.965 L1138.623,1406.795" data-layer="EXP - DESIGN LINES" />
+    <path d="M1213.343,1414.152 L1138.607,1413.983" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1125.424,1416.648 L1064.629,1416.510" data-layer="EXP - DESIGN LINES" />
+    <path d="M1040.681,1416.455 L995.584,1416.353" data-layer="EXP - DESIGN LINES" />
+    <path d="M971.631,1416.298 L910.351,1416.159" data-layer="EXP - DESIGN LINES" />
+    <path d="M1136.698,1423.861 L895.788,1423.314" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1085.339,1336.730 L1085.356,1329.207" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M1105.094,1336.775 L1105.111,1329.246" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M1085.356,1329.207 L1105.094,1336.775" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M1085.339,1336.730 L1105.111,1329.246" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M1132.604,1459.570 L1137.860,1459.582 L1137.919,1433.378" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M895.488,1457.624 L897.356,1416.130" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1129.754,1264.146 L1129.819,1235.883 L1101.068,1235.817" data-layer="Working" />
+    <path d="M1095.678,1235.783 L1067.467,1235.719 L1067.402,1264.469" data-layer="Working" />
+    <path d="M1062.011,1264.457 L1062.076,1235.706 L1033.326,1235.641 L1033.261,1264.417" data-layer="Working" />
+    <path d="M1207.732,1302.618 L1201.407,1309.000" data-layer="Working" />
+    <path d="M1061.672,996.306 L1072.069,996.827" data-layer="EXP - STEPS" />
+    <path d="M1000.040,993.221 L1010.437,993.742" data-layer="EXP - STEPS" />
+    <path d="M1033.198,994.895 L1038.582,995.164" data-layer="EXP - STEPS" />
+    <path d="M1005.700,950.996 L1003.848,988.015 L1037.946,989.720 L1039.799,952.702" data-layer="Working" />
+    <path d="M1038.404,998.704 L1042.065,991.388 L1039.031,986.191 L1038.404,998.704" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1007.132,1053.931 L1007.207,1052.428" data-layer="Working" />
+    <path d="M1027.830,1053.760 L1028.683,1054.702" data-layer="Working" />
+    <path d="M1007.169,1053.179 L1028.256,1054.231 L1031.167,996.069" data-layer="EXP - UNDERBUILD" />
+    <path d="M971.575,991.810 L976.958,992.079" data-layer="EXP - STEPS" />
+    <path d="M976.780,995.624 L980.441,988.309 L977.407,983.112 L976.780,995.624" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M938.396,990.138 L948.793,990.658" data-layer="EXP - STEPS" />
+    <path d="M1486.288,1565.773 L1487.347,1566.477" data-layer="Working" />
+    <path d="M1502.267,1562.765 L1502.855,1561.638" data-layer="Working" />
+    <path d="M1499.505,1552.433 L1489.602,1520.912" data-layer="EXP - UNDERBUILD" />
+    <path d="M1444.350,1575.135 L1445.054,1574.077" data-layer="Working" />
+    <path d="M1442.678,1564.650 L1436.159,1532.182" data-layer="EXP - UNDERBUILD" />
+    <path d="M1421.106,1577.350 L1422.071,1578.177" data-layer="Working" />
+    <path d="M1420.828,1567.844 L1418.279,1534.615" data-layer="EXP - UNDERBUILD" />
+    <path d="M1130.454,1508.778 L1130.670,1502.268" data-layer="EXP - TANKING" />
+    <path d="M1132.771,1699.862 L1133.592,1700.791" data-layer="Working" />
+    <path d="M1168.956,1710.365 L1168.772,1715.788" data-layer="EXP - STEPS" />
+    <path d="M1043.105,1698.350 L1042.925,1703.738" data-layer="EXP - STEPS" />
+    <path d="M1044.901,1698.410 L1044.721,1703.798" data-layer="EXP - STEPS" />
+    <path d="M1046.697,1698.470 L1046.517,1703.858" data-layer="EXP - STEPS" />
+    <path d="M1104.832,1700.997 L1104.647,1706.420" data-layer="EXP - STEPS" />
+    <path d="M1093.146,1640.696 L1094.014,1641.624" data-layer="Working" />
+    <path d="M1091.151,1699.345 L1092.080,1698.478" data-layer="Working" />
+    <path d="M1091.615,1698.912 L1093.580,1641.160" data-layer="EXP - UNDERBUILD" />
+    <path d="M1155.276,1708.719 L1156.205,1707.852" data-layer="Working" />
+    <path d="M1155.740,1708.285 L1157.705,1650.534" data-layer="EXP - UNDERBUILD" />
+    <path d="M974.539,1692.774 L975.468,1691.906" data-layer="Working" />
+    <path d="M975.003,1692.340 L976.876,1637.285" data-layer="EXP - UNDERBUILD" />
+    <path d="M976.443,1636.821 L977.310,1637.749" data-layer="Working" />
+    <path d="M925.022,1693.832 L924.843,1699.220" data-layer="EXP - STEPS" />
+    <path d="M1271.038,1036.723 L1271.936,1035.824" data-layer="Working" />
+    <path d="M1246.322,1036.318 L1271.487,1036.273 L1271.498,1040.541" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1278.595,1101.909 L1273.206,1101.914" data-layer="EXP - STEPS" />
+    <path d="M978.830,1694.433 L978.447,1704.308 L992.814,1704.797 L993.180,1694.022" data-layer="EXP - STEPS" />
+    <path d="M1433.955,1000.884 L1435.467,999.371" data-layer="Working" />
+    <path d="M1435.466,951.919 L1433.922,950.508" data-layer="Working" />
+    <path d="M1434.694,951.213 L1434.711,1000.128" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1294.111,1035.610 L1294.127,1055.126 L1290.604,1069.565" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1371.382,1026.493 L1413.257,1026.492" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1434.357,1017.505 L1494.712,1017.505" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1272.578,1069.580 L1272.550,1035.209" data-layer="Working" />
+    <path d="M1498.564,1074.957 L1444.866,1069.611" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1444.724,1132.044 L1507.018,1132.186" data-layer="EXP - DESIGN LINES" />
+    <path d="M1413.902,1070.591 L1407.919,1076.587 L1356.352,1076.642" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1290.648,1125.788 L1290.605,1070.987" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1207.719,1061.850 L1207.724,1067.256" data-layer="EXP - STEPS" />
+    <path d="M1205.922,1061.851 L1205.927,1067.257" data-layer="EXP - STEPS" />
+    <path d="M1204.125,1061.853 L1204.130,1067.259" data-layer="EXP - STEPS" />
+    <path d="M1207.719,1061.850 L1202.947,1061.854" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M1322.721,1175.567 L1324.832,1175.572" data-layer="Working" />
+    <path d="M1323.419,1138.447 L1324.315,1139.347" data-layer="Working" />
+    <path d="M1323.867,1138.897 L1323.741,1189.954" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1323.301,1190.392 L1324.201,1189.495" data-layer="Working" />
+    <path d="M1292.403,1243.732 L1297.776,1243.745" data-layer="EXP - STEPS" />
+    <path d="M1292.399,1245.529 L1297.772,1245.541" data-layer="EXP - STEPS" />
+    <path d="M1292.395,1247.326 L1297.768,1247.338" data-layer="EXP - STEPS" />
+    <path d="M1214.333,1210.827 L1214.338,1216.235" data-layer="EXP - STEPS" />
+    <path d="M1297.768,1247.338 L1302.812,1238.349" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1390.367,1198.570 L1391.882,1197.286" data-layer="Working" />
+    <path d="M1391.124,1197.928 L1391.260,1137.987" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1460.654,1011.664 L1460.654,1043.974" data-layer="Working" />
+    <path d="M1399.844,1021.100 L1399.845,1055.855" data-layer="Working" />
+    <path d="M1481.907,1499.943 L1524.925,1486.442" data-layer="Working" />
+    <path d="M1464.487,1428.436 L1464.723,1454.280" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1417.746,1468.675 L1464.220,1455.043" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1392.215,1456.484 L1392.460,1356.428" data-layer="Working" />
+    <path d="M1410.196,1451.616 L1410.274,1419.841" data-layer="EXP - DESIGN LINES" />
+    <path d="M1410.304,1407.426 L1410.447,1349.096" data-layer="EXP - DESIGN LINES" />
+    <path d="M1382.951,1337.512 L1383.036,1300.301" data-layer="Working" />
+    <path d="M1400.965,1317.865 L1401.030,1289.014" data-layer="EXP - DESIGN LINES" />
+    <path d="M1383.045,1317.824 L1400.965,1317.865" data-layer="EXP - DESIGN LINES" />
+    <path d="M1327.606,1355.527 L1367.147,1355.624" data-layer="Working" />
+    <path d="M1403.134,1399.976 L1397.744,1399.963" data-layer="EXP - STEPS" />
+    <path d="M1329.254,1579.185 L1339.655,1579.610" data-layer="EXP - STEPS" />
+    <path d="M1381.746,1581.886 L1395.915,1580.799" data-layer="EXP - STEPS" />
+    <path d="M1447.775,1575.071 L1461.705,1572.266" data-layer="EXP - STEPS" />
+    <path d="M1527.524,1555.481 L1541.083,1551.226" data-layer="EXP - STEPS" />
+    <path d="M945.560,1049.643 L945.515,1050.540" data-layer="Working" />
+    <path d="M966.199,1050.676 L967.051,1051.618" data-layer="Working" />
+    <path d="M945.538,1050.091 L966.625,1051.147 L969.535,992.985" data-layer="EXP - UNDERBUILD" />
+    <path d="M975.456,1052.038 L976.399,1051.186" data-layer="Working" />
+    <path d="M975.927,1051.612 L978.501,1000.181" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M913.181,1049.537 L967.634,1052.262" data-layer="Working" />
+    <path d="M913.914,1065.754 L974.531,1068.787" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M975.545,1068.838 L1036.163,1071.871" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1037.177,1071.922 L1095.982,1074.865" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1037.567,1054.697 L1040.141,1003.265" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1098.276,1072.981 L1147.987,1075.450" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1127.412,1168.983 L1039.984,1168.784" data-layer="Working" />
+    <path d="M1119.367,1150.996 L1077.538,1150.901" data-layer="EXP - DESIGN LINES" />
+    <path d="M1070.351,1150.884 L1051.151,1150.841" data-layer="EXP - DESIGN LINES" />
+    <path d="M1029.984,1144.728 L1001.044,1144.662" data-layer="EXP - DESIGN LINES" />
+    <path d="M977.085,1144.608 L922.095,1144.483" data-layer="EXP - DESIGN LINES" />
+    <path d="M911.122,1134.425 L922.118,1134.450" data-layer="Working" />
+    <path d="M975.292,1052.851 L972.842,1104.154" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1035.234,1103.977 L1035.274,1086.213 L1036.731,1055.719" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M906.234,1336.936 L907.130,1337.837" data-layer="Working" />
+    <path d="M976.582,1337.096 L975.682,1337.993" data-layer="Working" />
+    <path d="M906.682,1337.387 L906.559,1391.578" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1176.155,1334.783 L1181.545,1334.830" data-layer="EXP - STEPS" />
+    <path d="M1060.483,1337.736 L1060.359,1391.927" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M991.437,1337.579 L991.314,1391.770" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1181.900,1340.543 L1181.895,1342.654" data-layer="Working" />
+    <path d="M1211.994,1342.124 L1212.895,1341.227" data-layer="Working" />
+    <path d="M1181.897,1341.599 L1212.444,1341.676 L1212.352,1382.390" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1145.228,1341.523 L1145.135,1382.237" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1131.514,1501.689 L1171.998,1502.983" data-layer="Working" />
+    <path d="M1132.013,1485.978 L1172.497,1487.272" data-layer="EXP - DESIGN LINES" />
+    <path d="M1132.674,1475.359 L1171.843,1476.648" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1132.910,1468.176 L1172.057,1469.464" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1172.057,1469.464 L1171.363,1492.812" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1005.565,1566.259 L1005.595,1565.361" data-layer="Working" />
+    <path d="M975.933,1565.273 L976.861,1564.405" data-layer="Working" />
+    <path d="M1005.580,1565.810 L976.397,1564.839 L978.209,1510.153" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1119.117,1569.416 L1089.933,1568.445 L1091.746,1513.759" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M897.083,1650.361 L897.981,1650.392" data-layer="Working" />
+    <path d="M897.793,1629.484 L898.660,1630.413" data-layer="Working" />
+    <path d="M907.895,1629.828 L908.762,1630.757" data-layer="Working" />
+    <path d="M908.055,1625.114 L908.922,1626.043" data-layer="Working" />
+    <path d="M897.532,1650.377 L898.227,1629.949 L908.328,1630.292 L908.489,1625.579" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M921.842,1631.202 L922.770,1630.334" data-layer="Working" />
+    <path d="M922.002,1626.488 L922.931,1625.621" data-layer="Working" />
+    <path d="M931.515,1688.618 L895.209,1687.383" data-layer="Working" />
+    <path d="M953.273,1710.986 L1005.503,1712.763" data-layer="EXP - DESIGN LINES" />
+    <path d="M953.029,1718.169 L1005.258,1719.946" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1069.971,1714.971 L1131.812,1717.075" data-layer="EXP - DESIGN LINES" />
+    <path d="M1069.727,1722.154 L1131.568,1724.258" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1134.096,1724.345 L1195.937,1726.448" data-layer="EXP - DESIGN LINES" />
+    <path d="M1133.852,1731.528 L1195.693,1733.632" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1104.870,1701.325 L1104.487,1711.201 L1118.854,1711.690 L1119.220,1700.915" data-layer="EXP - STEPS" />
+    <path d="M1168.995,1710.699 L1168.612,1720.574 L1182.979,1721.063 L1183.345,1710.288" data-layer="EXP - STEPS" />
+    <path d="M1250.445,1732.472 L1220.077,1727.828 L1197.888,1727.101" data-layer="EXP - DESIGN LINES" />
+    <path d="M1308.639,1741.420 L1252.302,1732.805" data-layer="EXP - DESIGN LINES" />
+    <path d="M1310.880,1726.766 L1308.639,1741.420" data-layer="EXP - DESIGN LINES" />
+    <path d="M1218.803,1711.155 L1219.827,1710.403" data-layer="Working" />
+    <path d="M1227.063,1657.143 L1227.815,1658.167" data-layer="Working" />
+    <path d="M1227.439,1657.655 L1219.315,1710.779" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1237.658,1652.689 L1232.330,1651.874" data-layer="EXP - STEPS" />
+    <path d="M1147.066,1773.356 L1146.357,1778.000 L1141.028,1777.185 L1141.768,1772.343" data-layer="EXP-LEVEL-LANDING" />
+    <path d="M195.448,494.676 L142.793,512.707" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M165.356,396.364 L109.348,407.387" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M355.943,599.076 L353.342,659.755" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M463.088,602.469 L460.695,658.279" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M560.761,606.648 L558.368,662.465" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M666.248,608.601 L666.381,670.526" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M748.552,475.678 L749.194,532.137" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M440.988,474.678 L438.987,530.510" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M881.354,446.232 L939.319,445.602 L943.114,439.498" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M876.035,445.079 L846.427,426.700" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M112.736,552.612 L119.599,571.743 L119.628,571.827" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M131.876,607.312 L119.628,571.827 L103.306,525.905" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M131.876,607.312 L131.907,607.404 L159.438,687.167" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1082.265,737.730 L1082.029,688.277 L1077.719,688.335" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1077.229,649.972 L1081.047,649.926 L1081.047,649.926 L1080.223,594.895 L1030.344,595.159 L1030.488,606.379" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M702.658,219.919 L732.317,213.976" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M661.980,345.006 L667.952,343.812" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M705.956,335.216 L724.534,331.422" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M460.665,658.996 L459.120,697.469" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M558.623,662.476 L556.970,701.040" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M666.383,671.267 L666.455,705.681" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M666.711,705.690 L698.231,706.841" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M603.790,703.391 L665.764,705.842" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M722.153,676.412 L722.223,708.011 L741.363,707.981 L741.345,674.752" data-layer="EXP - TANKING" />
+    <path d="M697.940,669.560 L700.866,669.554 L700.732,608.565" data-layer="EXP - UNDERBUILD" />
+    <path d="M855.228,609.668 L888.333,609.222 L888.657,633.195" data-layer="EXP - UNDERBUILD" />
+    <path d="M832.711,700.318 L832.611,692.499 L889.376,691.762 L889.822,726.574" data-layer="EXP - UNDERBUILD" />
+    <path d="M823.457,653.237 L786.011,653.707 L786.515,691.891 L816.775,691.515" data-layer="EXP - TANKING" />
+    <path d="M1031.066,649.316 L980.759,649.959 L980.725,647.049" data-layer="EXP - UNDERBUILD" />
+    <path d="M1250.163,751.830 L1179.697,745.021" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1179.697,745.021 L1129.431,740.163 L1120.718,739.833" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1328.424,668.731 L1302.902,613.784" data-layer="EXP - TANKING" />
+    <path d="M1340.028,694.532 L1351.549,718.978" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1143.142,514.529 L1135.864,498.922 L1140.474,496.757 L1188.128,474.547" data-layer="EXP - UNDERBUILD" />
+    <path d="M1188.128,474.547 L1229.202,455.445" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1190.322,371.972 L1185.552,361.781" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1229.202,455.445 L1206.937,407.667" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1163.109,385.694 L1190.689,372.785 L1207.001,407.637 L1179.286,420.255" data-layer="EXP - UNDERBUILD" />
+    <path d="M1085.167,400.937 L1075.033,379.207 L1128.546,354.255" data-layer="EXP - UNDERBUILD" />
+    <path d="M142.593,512.769 L124.503,518.981 L103.133,526.320" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M162.366,385.818 L157.879,363.017 L140.190,366.499" data-layer="EXP - UNDERBUILD" />
+    <path d="M103.502,526.471 L85.940,482.662" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M59.808,418.499 L85.963,482.725" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M789.917,315.855 L752.832,375.486" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M861.994,529.911 L882.065,529.683 L881.662,494.256" data-layer="EXP - UNDERBUILD" />
+    <path d="M954.644,501.359 L954.217,463.911 L973.309,463.694" data-layer="EXP - TANKING" />
+    <path d="M1019.494,528.124 L1043.466,527.851 L1042.801,469.453 L1029.947,469.593" data-layer="EXP - UNDERBUILD" />
+    <path d="M1043.417,469.478 L1057.419,469.307" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M637.614,532.466 L672.972,531.988 L672.326,475.297 L668.733,475.338" data-layer="EXP - UNDERBUILD" />
+    <path d="M748.576,476.265 L747.853,412.780" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M746.406,532.161 L746.562,545.859" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M803.754,445.726 L823.827,445.497 L824.233,481.133" data-layer="EXP - UNDERBUILD" />
+    <path d="M622.666,370.189 L619.382,353.895 L662.040,345.300" data-layer="EXP - UNDERBUILD" />
+    <path d="M684.666,424.512 L703.468,420.751" data-layer="EXP - TANKING" />
+    <path d="M667.776,342.931 L705.770,335.331" data-layer="EXP - TANKING" />
+    <path d="M656.804,286.143 L694.408,278.622" data-layer="EXP - TANKING" />
+    <path d="M682.104,320.462 L700.738,316.783 L704.310,334.643" data-layer="EXP - UNDERBUILD" />
+    <path d="M660.130,265.923 L689.766,259.995 L693.497,278.650" data-layer="EXP - UNDERBUILD" />
+    <path d="M639.079,233.010 L585.161,243.711 L590.031,268.248" data-layer="EXP - UNDERBUILD" />
+    <path d="M540.218,280.629 L538.324,270.958 L527.154,273.209 L523.693,256.034 L481.035,264.630" data-layer="EXP - UNDERBUILD" />
+    <path d="M558.651,372.220 L555.972,358.928 L544.802,361.179 L541.341,344.004 L498.684,352.600" data-layer="EXP - UNDERBUILD" />
+    <path d="M498.624,352.305 L463.438,359.231" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M480.033,264.588 L416.909,277.308" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M481.796,322.992 L470.591,325.227 L474.571,345.184 L511.911,337.755" data-layer="EXP - TANKING" />
+    <path d="M362.071,357.879 L369.439,395.512" data-layer="EXP - UNDERBUILD" />
+    <path d="M342.135,361.805 L334.137,321.461 L322.823,323.704" data-layer="EXP - UNDERBUILD" />
+    <path d="M433.943,364.953 L443.325,412.598" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M490.726,411.719 L494.883,432.563 L531.636,425.251" data-layer="EXP - TANKING" />
+    <path d="M282.929,316.965 L296.290,384.855 L299.750,402.008" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M299.297,403.411 L306.333,439.172" data-layer="EXP - UNDERBUILD" />
+    <path d="M465.976,531.469 L468.006,475.638" data-layer="EXP - UNDERBUILD" />
+    <path d="M440.988,474.670 L442.269,438.928" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M559.941,479.653 L565.356,479.857 L573.375,479.460" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M559.065,478.979 L557.119,530.765" data-layer="EXP - UNDERBUILD" />
+    <path d="M275.315,389.705 L265.970,342.536 L256.386,344.435 L255.469,339.809 L240.766,342.722 L241.682,347.348 L232.098,349.247 L236.168,369.788" data-layer="EXP - UNDERBUILD" />
+    <path d="M344.317,512.502 L352.989,498.754 L332.804,486.021" data-layer="EXP - UNDERBUILD" />
+    <path d="M306.149,439.834 L308.218,450.771" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M372.652,488.700 L373.673,460.210 L393.750,460.930" data-layer="EXP - UNDERBUILD" />
+    <path d="M779.493,476.811 L783.473,476.766 L784.089,530.834 L775.360,530.933" data-layer="EXP - UNDERBUILD" />
+    <path d="M266.239,400.360 L278.063,397.996" data-layer="EXP - UNDERBUILD" />
+    <path d="M196.035,496.384 L203.408,493.783 L207.269,503.437" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M352.902,660.928 L351.504,693.539" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M159.647,687.175 L228.522,689.691" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M290.475,691.955 L350.671,694.142 L412.595,696.415" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M120.035,571.593 L197.547,545.049 L203.428,562.223 L190.438,566.671" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M192.813,573.607 L205.803,569.158 L210.355,582.450 L232.738,574.784" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M240.917,577.440 L270.987,665.244" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M270.800,665.309 L291.456,666.092 L290.450,692.598" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M232.430,574.890 L240.372,598.080" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M713.273,275.772 L694.564,279.514" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M629.567,449.752 L628.880,435.843 L683.911,424.916" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M805.563,444.387 L805.169,409.804" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M842.532,431.432 L879.288,371.435" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M506.206,699.831 L556.087,701.652" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M603.744,703.400 L556.087,701.652" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M778.157,727.141 L832.826,729.130 L832.826,727.858" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1029.766,725.451 L1029.896,736.387" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1029.896,736.387 L1054.250,737.311 L1081.030,738.327" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1083.406,738.417 L1120.714,739.833" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1328.111,668.876 L1340.028,694.532" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1220.656,514.259 L1250.233,500.435 L1265.268,532.686" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1229.202,455.445 L1249.925,499.853" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M862.118,540.852 L862.004,530.810" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M634.591,505.104 L626.769,505.193 L627.047,528.094" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M344.026,514.646 L349.958,518.388 L353.238,518.506 L352.755,532.001" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M545.079,279.549 L551.254,278.332 L553.768,290.969" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M562.805,367.517 L568.738,366.322 L572.688,386.136" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M463.438,359.231 L433.943,364.953" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M551.924,534.585 L546.455,534.389 L546.122,543.670" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M410.760,537.582 L436.894,538.264 L437.175,530.438" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M978.407,383.968 L986.678,370.667" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M865.997,445.194 L881.271,445.020" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M228.522,689.691 L290.472,692.016" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M199.486,548.724 L221.870,541.058" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M741.449,599.572 L774.323,599.572 L774.340,607.588" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M778.006,682.419 L778.123,727.139" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M833.216,726.849 L850.677,726.625 L850.711,729.261 L860.735,729.132" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M778.123,727.139 L738.060,725.681 L721.985,717.764 L721.966,708.922" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M630.545,600.650 L666.231,600.571 L666.248,608.591" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M588.675,662.851 L630.562,608.670" data-layer="EXP - WORKING" />
+    <path d="M560.761,606.648 L561.107,598.576 L530.538,597.265" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M603.744,703.400 L605.438,663.849 L594.943,663.411" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M488.640,658.626 L530.493,605.351" data-layer="EXP - WORKING" />
+    <path d="M708.358,664.072 L721.525,664.044 L721.539,670.562" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M506.206,699.832 L459.091,698.112 L412.595,696.415" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M506.160,699.830 L507.740,659.696" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M411.991,696.532 L413.554,655.655 L399.614,655.061" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M463.088,602.462 L463.411,593.448" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M355.943,599.068 L356.348,589.612" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M60.381,417.626 L108.003,408.246" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M59.512,417.195 L40.000,368.999" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M86.642,482.491 L127.881,468.264" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M290.890,665.217 L291.208,656.867 L304.971,657.430" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M957.956,737.660 L1001.406,737.124 L1001.293,728.426" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1102.003,702.826 L1143.328,702.330" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1148.719,702.265 L1167.023,702.046" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1089.838,691.590 L1090.439,731.446 L1120.441,732.585 L1120.251,719.212" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1089.416,629.749 L1090.326,630.636" data-layer="EXP - WORKING" />
+    <path d="M1176.968,629.597 L1177.856,628.688" data-layer="EXP - WORKING" />
+    <path d="M1247.771,628.748 L1248.659,627.839" data-layer="EXP - WORKING" />
+    <path d="M1187.180,629.474 L1186.271,628.587" data-layer="EXP - WORKING" />
+    <path d="M1269.317,623.475 L1271.574,628.335" data-layer="EXP - STEPS" />
+    <path d="M1267.687,624.232 L1269.945,629.092" data-layer="EXP - STEPS" />
+    <path d="M1280.238,690.435 L1280.675,689.242" data-layer="EXP - WORKING" />
+    <path d="M1258.356,643.324 L1259.550,643.760" data-layer="EXP - WORKING" />
+    <path d="M1276.481,634.229 L1277.433,636.279" data-layer="EXP - WORKING" />
+    <path d="M1294.073,683.429 L1280.457,689.838 L1258.953,643.542 L1276.957,635.254" data-layer="EXP - UNDERBUILD" />
+    <path d="M1113.987,458.820 L1118.938,469.440" data-layer="EXP - STEPS" />
+    <path d="M1091.920,411.052 L1086.813,400.166" data-layer="EXP - STEPS" />
+    <path d="M1185.615,361.751 L1169.643,327.494" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1148.180,336.839 L1169.389,326.950" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1128.004,354.507 L1124.840,347.722" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1124.840,347.722 L1148.180,336.839" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M972.149,631.385 L973.036,630.475" data-layer="EXP - WORKING" />
+    <path d="M971.847,607.743 L972.757,608.630" data-layer="EXP - WORKING" />
+    <path d="M1029.639,607.903 L1030.526,606.993" data-layer="EXP - WORKING" />
+    <path d="M972.592,630.930 L972.302,608.186 L1030.082,607.448 L1030.255,619.783" data-layer="EXP - UNDERBUILD" />
+    <path d="M411.705,528.911 L412.635,528.045" data-layer="EXP - WORKING" />
+    <path d="M413.662,474.305 L414.528,475.235" data-layer="EXP - WORKING" />
+    <path d="M412.170,528.478 L414.095,474.770 L426.440,475.213" data-layer="EXP - UNDERBUILD" />
+    <path d="M334.222,527.353 L334.503,528.592" data-layer="EXP - WORKING" />
+    <path d="M286.576,498.365 L287.816,498.084" data-layer="EXP - WORKING" />
+    <path d="M287.196,498.225 L334.362,527.972 L338.923,520.740" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M307.402,451.586 L258.053,461.173 L246.122,427.852 L239.184,405.974 L242.485,405.323" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M243.093,405.234 L243.800,404.178" data-layer="EXP - WORKING" />
+    <path d="M243.446,404.706 L237.667,375.394" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M307.711,451.586 L321.964,448.758 L322.011,448.749" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M322.011,448.749 L351.575,443.006" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M351.575,443.006 L376.684,438.128" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M441.011,363.648 L433.791,326.863 L431.935,321.556 L424.297,306.857" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M363.001,357.697 L350.797,295.685" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M377.636,437.276 L369.437,395.504" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M376.684,438.128 L383.221,436.812 L446.431,439.134" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M568.887,429.598 L509.579,441.422 L490.552,440.733" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M490.552,440.733 L489.948,440.711 L446.431,439.134" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M573.375,479.460 L571.799,448.025 L570.824,439.284 L568.893,429.597" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M534.361,435.825 L570.072,397.060" data-layer="EXP - WORKING" />
+    <path d="M637.520,475.409 L638.429,476.297" data-layer="EXP - WORKING" />
+    <path d="M637.719,492.871 L638.627,493.759" data-layer="EXP - WORKING" />
+    <path d="M635.083,492.901 L635.992,493.789" data-layer="EXP - WORKING" />
+    <path d="M634.591,505.104 L636.720,505.104" data-layer="EXP - WORKING" />
+    <path d="M635.655,505.104 L635.538,493.345 L638.173,493.315 L637.974,475.853" data-layer="EXP - UNDERBUILD" />
+    <path d="M636.904,475.446 L630.840,475.490 L629.567,449.752" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M693.319,477.193 L692.590,423.855" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M655.755,324.126 L656.811,324.833" data-layer="EXP - WORKING" />
+    <path d="M629.112,329.880 L656.283,324.479 L653.230,309.056" data-layer="EXP - UNDERBUILD" />
+    <path d="M600.363,324.246 L584.855,327.326" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M600.363,324.246 L602.617,323.799" data-layer="EXP - WORKING" />
+    <path d="M596.252,300.381 L597.308,301.087" data-layer="EXP - WORKING" />
+    <path d="M601.490,324.022 L596.780,300.734 L650.486,289.808" data-layer="EXP - UNDERBUILD" />
+    <path d="M650.486,289.808 L657.541,288.408" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M513.487,348.700 L536.783,312.289" data-layer="EXP - WORKING" />
+    <path d="M573.587,270.596 L589.103,267.516" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M524.784,256.903 L584.476,244.875" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M639.038,232.804 L702.089,220.127" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M956.321,419.343 L789.598,315.657 L775.340,243.819 L739.223,251.106 L731.774,214.087" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M829.927,285.715 L785.411,294.560" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M881.145,319.142 L893.212,326.647" data-layer="EXP - STEPS" />
+    <path d="M903.792,333.226 L880.376,370.877" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M752.464,375.259 L732.628,362.670 L726.214,330.858" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M842.872,430.885 L752.464,375.259" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M911.430,530.253 L911.406,528.141" data-layer="EXP - WORKING" />
+    <path d="M890.794,529.868 L891.682,528.959" data-layer="EXP - WORKING" />
+    <path d="M911.418,529.197 L891.238,529.414" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M917.788,528.069 L917.812,530.180" data-layer="EXP - WORKING" />
+    <path d="M946.543,528.335 L947.441,529.223" data-layer="EXP - WORKING" />
+    <path d="M917.800,529.124 L946.992,528.779 L946.878,518.760" data-layer="EXP - UNDERBUILD" />
+    <path d="M882.996,530.271 L890.183,530.189" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M954.644,501.359 L955.054,537.407" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M881.875,494.256 L881.354,446.232" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M969.773,374.261 L957.633,366.711" data-layer="EXP - STEPS" />
+    <path d="M956.321,419.343 L978.345,383.929" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M1057.419,469.308 L1057.317,460.961 L1043.573,423.737 L978.747,383.421" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M994.135,536.832 L955.625,501.348" data-layer="EXP - WORKING" />
+    <path d="M1116.946,450.568 L1118.140,451.002" data-layer="EXP - WORKING" />
+    <path d="M1162.370,430.382 L1162.805,429.188" data-layer="EXP - WORKING" />
+    <path d="M1117.543,450.785 L1162.587,429.785 L1168.180,441.581" data-layer="EXP - UNDERBUILD" />
+    <path d="M1198.145,707.733 L1223.501,707.434" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1223.432,701.370 L1257.048,700.967 L1256.563,660.514" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1281.806,710.197 L1335.097,685.444" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M814.199,728.155 L813.926,706.820" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1276.886,699.604 L1281.806,710.197" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M804.263,651.787 L803.708,608.492" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M797.076,651.879 L796.525,608.826" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M742.705,674.417 L776.511,674.345" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M667.312,685.499 L720.568,685.384" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M558.484,680.746 L604.750,682.729 L630.682,685.577 L666.024,685.501" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M460.811,676.560 L557.198,680.691" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M353.717,671.969 L459.524,676.504" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M292.049,669.326 L350.805,671.844" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M667.327,692.686 L720.583,692.572" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M558.176,687.927 L604.203,689.900 L630.296,692.766 L666.039,692.689" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M460.503,683.741 L556.890,687.872" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M353.409,679.150 L459.217,683.685" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M291.741,676.507 L352.123,679.095" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M148.056,596.065 L165.262,645.785" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M185.094,687.460 L170.762,645.607" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M140.020,564.069 L124.756,519.826" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M133.220,566.398 L117.956,522.155" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M124.336,518.609 L87.858,412.871" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M117.536,520.937 L80.738,414.272" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M87.434,411.641 L80.878,392.639 L78.006,378.217" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M78.006,378.217 L69.902,337.527" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M80.314,413.043 L73.925,394.522 L70.957,379.621 L69.902,337.527" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M306.815,452.967 L351.320,481.036 L348.757,485.097" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M572.661,465.090 L362.915,457.461 L359.341,456.357 L342.865,445.964" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M572.307,457.885 L363.176,450.278 L353.165,443.963" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M354.836,488.935 L357.398,484.875 L355.154,474.961 L315.614,450.018" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M301.663,408.818 L349.715,399.387" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M305.528,432.044 L373.545,418.831" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M306.899,439.100 L374.916,425.887" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M374.809,418.586 L441.852,405.562" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M376.180,425.641 L443.223,412.618" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M478.669,356.233 L485.685,391.050 L500.338,388.097" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M489.878,411.857 L490.017,412.547" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M459.152,270.064 L465.895,303.524" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M470.087,324.332 L470.226,325.022" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M825.927,706.667 L813.926,706.820" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M821.064,703.135 L815.130,703.211" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1060.561,689.199 L1061.172,736.929" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1053.374,689.291 L1053.983,736.839" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1059.361,595.440 L1060.049,649.218" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1052.174,595.532 L1052.862,649.310" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1228.889,509.638 L1208.463,465.825" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1222.375,512.675 L1201.949,468.862" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1207.919,464.658 L1186.242,418.163" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1201.404,467.695 L1179.728,421.200" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1187.328,719.033 L1270.713,718.802 L1336.416,688.285" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1120.353,726.400 L1179.041,726.240" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1120.334,719.212 L1179.021,719.052" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1187.414,726.217 L1272.310,725.985 L1339.444,694.803" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M821.111,706.639 L826.502,706.570" data-layer="EXP - STEPS" />
+    <path d="M821.088,704.842 L826.479,704.773" data-layer="EXP - STEPS" />
+    <path d="M240.707,596.066 L245.807,594.319" data-layer="EXP - STEPS" />
+    <path d="M241.290,597.766 L246.390,596.019" data-layer="EXP - STEPS" />
+    <path d="M240.125,594.366 L245.225,592.619" data-layer="EXP - STEPS" />
+    <path d="M239.543,592.666 L244.643,590.919" data-layer="EXP - STEPS" />
+    <path d="M238.961,590.966 L244.061,589.219" data-layer="EXP - STEPS" />
+    <path d="M238.379,589.266 L243.479,587.519" data-layer="EXP - STEPS" />
+    <path d="M237.796,587.566 L242.896,585.819" data-layer="EXP - STEPS" />
+    <path d="M237.214,585.866 L242.314,584.119" data-layer="EXP - STEPS" />
+    <path d="M236.632,584.166 L241.732,582.419" data-layer="EXP - STEPS" />
+    <path d="M236.050,582.466 L241.150,580.719" data-layer="EXP - STEPS" />
+    <path d="M235.468,580.766 L240.568,579.019" data-layer="EXP - STEPS" />
+    <path d="M239.543,592.666 L244.643,590.919" data-layer="EXP - STEPS" />
+    <path d="M204.352,562.932 L206.098,568.032" data-layer="EXP - STEPS" />
+    <path d="M202.652,563.514 L204.398,568.614" data-layer="EXP - STEPS" />
+    <path d="M200.952,564.097 L202.699,569.196" data-layer="EXP - STEPS" />
+    <path d="M199.252,564.679 L200.999,569.779" data-layer="EXP - STEPS" />
+    <path d="M197.552,565.261 L199.299,570.361" data-layer="EXP - STEPS" />
+    <path d="M195.852,565.843 L197.599,570.943" data-layer="EXP - STEPS" />
+    <path d="M194.152,566.425 L195.899,571.525" data-layer="EXP - STEPS" />
+    <path d="M192.452,567.008 L194.199,572.108" data-layer="EXP - STEPS" />
+    <path d="M190.438,566.671 L192.813,573.607" data-layer="EXP - STEPS" />
+    <path d="M811.536,703.257 L813.926,706.820" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M811.398,692.484 L811.536,703.257" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M814.992,692.438 L815.130,703.211" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1162.832,384.961 L1142.040,340.363" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1169.347,381.924 L1148.554,337.326" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1274.578,626.940 L1284.019,622.554" data-layer="EXP - STEPS" />
+    <path d="M974.227,643.998 L974.075,632.074" data-layer="EXP - STEPS" />
+    <path d="M972.359,638.428 L972.278,632.097" data-layer="EXP - STEPS" />
+    <path d="M1017.593,409.114 L997.174,441.948 L947.955,442.508 L943.114,439.498" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1023.697,412.910 L1001.196,449.090 L945.940,449.719 L939.319,445.602" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M953.376,468.948 L882.252,469.758" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M953.458,476.136 L882.350,476.945" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M880.964,469.773 L825.009,470.410" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M881.062,476.960 L825.091,477.597" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M784.627,447.962 L784.838,465.067 L779.458,465.133 L779.335,455.223 L630.583,457.254" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M784.635,447.962 L630.228,450.071" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M670.312,469.038 L670.271,463.647" data-layer="EXP - STEPS" />
+    <path d="M668.515,469.051 L668.474,463.661 L663.084,463.729" data-layer="EXP - STEPS" />
+    <path d="M670.271,463.647 L668.440,463.668" data-layer="EXP - STEPS" />
+    <path d="M426.622,474.155 L427.008,463.381 L440.730,463.893" data-layer="EXP - STEPS" />
+    <path d="M442.017,463.941 L455.738,464.454 L465.001,464.710" data-layer="EXP - STEPS" />
+    <path d="M266.417,401.261 L267.274,405.607 L260.224,406.997" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M268.160,406.403 L269.207,411.692" data-layer="EXP - STEPS" />
+    <path d="M385.628,325.508 L395.831,323.503" data-layer="EXP - STEPS" />
+    <path d="M608.182,391.328 L607.117,386.044" data-layer="EXP - STEPS" />
+    <path d="M606.420,391.683 L605.355,386.398" data-layer="EXP - STEPS" />
+    <path d="M604.659,392.038 L603.594,386.753" data-layer="EXP - STEPS" />
+    <path d="M679.126,341.809 L689.121,392.170" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M718.260,397.379 L751.862,390.710 L758.744,379.587" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M686.176,340.410 L696.871,394.296 L747.396,384.268 L752.632,375.805" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M675.125,284.729 L682.093,319.838" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M668.075,286.128 L675.043,321.237" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M663.832,227.830 L671.042,264.157" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M656.782,229.229 L663.992,265.557" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M707.613,220.254 L716.356,263.736 L722.690,267.961 L742.998,263.930 L758.565,342.361 L924.824,445.759" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M720.444,275.734 L737.348,272.379 L752.122,346.818 L911.447,445.904" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1029.778,723.938 L1030.687,724.826" data-layer="EXP - WORKING" />
+    <path d="M1012.317,724.145 L1013.226,725.033" data-layer="EXP - WORKING" />
+    <path d="M1012.348,726.780 L1013.257,727.668" data-layer="EXP - WORKING" />
+    <path d="M1030.233,724.382 L1012.771,724.589 L1012.802,727.224 L1001.119,727.368" data-layer="EXP - UNDERBUILD" />
+    <path d="M778.468,608.868 L803.708,608.492" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M559.312,661.442 L571.851,661.979" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M586.634,674.468 L587.057,664.594" data-layer="EXP - STEPS" />
+    <path d="M700.578,676.442 L700.567,671.052" data-layer="EXP - STEPS" />
+    <path d="M702.375,676.438 L702.364,671.048" data-layer="EXP - STEPS" />
+    <path d="M378.728,668.047 L378.959,662.661" data-layer="EXP - STEPS" />
+    <path d="M364.668,660.375 L353.336,659.890" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M1045.467,338.821 L1040.874,336.149 L1035.695,333.136 L1031.734,330.831 L1030.396,330.314 L1024.711,328.114 L1019.026,325.914 L1014.370,324.112 L1013.411,323.600 L1008.115,320.775 L1002.819,317.949 L997.522,315.123 L992.226,312.297 L988.888,310.516 L986.844,309.611 L981.313,307.162 L975.782,304.714 L970.252,302.265 L964.721,299.816 L959.191,297.367 L958.901,297.239 L953.629,294.969 L948.065,292.573 L942.502,290.178 L936.934,287.788 L931.347,285.430 L925.739,283.107 L920.109,280.818 L914.457,278.563 L908.785,276.343 L903.090,274.157 L899.733,272.888 L898.846,272.655 L897.963,272.396 L897.084,272.112 L896.211,271.802 L895.343,271.468 L894.482,271.109 L893.629,270.724 L892.783,270.316 L891.947,269.882 L891.121,269.425 L890.305,268.944 L889.516,268.420 L889.500,268.440 L888.693,267.926 L887.900,267.386 L887.123,266.822 L886.362,266.233 L885.618,265.620 L884.892,264.983 L884.184,264.324 L883.495,263.643 L882.826,262.940 L882.177,262.217 L881.549,261.474 L880.943,260.712 L880.358,259.931 L879.796,259.133 L879.257,258.319 L878.741,257.488 L878.248,256.642 L877.779,255.782 L877.499,255.223 L877.340,254.906 L876.935,254.014 L876.556,253.110 L876.200,252.197 L875.870,251.274 L875.564,250.342 L875.283,249.403 L875.026,248.457 L874.794,247.504 L874.578,246.499 L874.442,245.315 L874.317,244.609 L874.213,243.901 L874.129,243.190 L874.066,242.478 L874.022,241.766 L873.998,241.054 L873.993,240.342 L874.008,239.631 L874.041,238.921 L874.093,238.214 L874.164,237.508 L874.276,236.811 L874.253,236.806 L874.362,236.108 L874.489,235.413 L874.633,234.723 L874.794,234.037 L874.971,233.356 L875.164,232.680 L875.374,232.010 L875.599,231.345 L875.840,230.686 L876.096,230.034 L876.367,229.388 L876.653,228.748 L876.954,228.116 L877.269,227.491 L877.598,226.873 L877.941,226.263 L878.299,225.661 L878.674,225.069 L879.068,224.489 L879.479,223.922 L879.907,223.367 L880.351,222.825 L880.811,222.297 L881.287,221.783 L881.777,221.282 L882.281,220.796 L882.798,220.325 L883.329,219.869 L883.871,219.428 L884.426,219.003 L884.992,218.593 L885.155,218.487" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M894.413,206.826 L895.808,212.439 L909.837,225.748" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M883.346,211.962 L884.182,215.328 L911.528,238.005" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M899.423,691.236 L901.220,691.236 L901.220,689.439 L899.423,689.439" data-layer="EXP - BOX LIGHITNG" />
+    <path d="M1029.185,606.396 L1024.794,598.636 L1030.284,589.111" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M727.279,336.143 L731.495,329.778 L720.444,275.734" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M441.877,405.557 L448.081,409.288 L451.312,425.486 L451.648,429.652 L451.253,440.552" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M342.336,361.755 L345.784,379.321" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M997.240,172.611 L997.240,172.611 L1003.229,172.627 L1009.219,172.644 L1015.209,172.660 L1021.198,172.677 L1027.188,172.693 L1031.600,172.706 L1033.286,172.731 L1034.970,172.800 L1036.652,172.910 L1038.331,173.063 L1040.005,173.258 L1041.674,173.494 L1043.337,173.773 L1044.992,174.094 L1046.638,174.455 L1048.275,174.859 L1049.901,175.303 L1051.516,175.788 L1053.117,176.313 L1054.706,176.878 L1056.279,177.483 L1057.837,178.128 L1059.378,178.811 L1060.901,179.533 L1062.406,180.293 L1063.891,181.090 L1065.355,181.925 L1066.799,182.796 L1068.219,183.703 L1069.617,184.645 L1070.991,185.623 L1072.339,186.634 L1073.662,187.679 L1074.958,188.757 L1076.226,189.867 L1077.466,191.009 L1078.678,192.182 L1079.859,193.384 L1081.010,194.616 L1082.129,195.876 L1083.216,197.165 L1084.271,198.480 L1084.834,199.211 L1088.457,203.980 L1092.081,208.750 L1095.704,213.520 L1099.327,218.289 L1102.950,223.059 L1106.573,227.828 L1107.934,229.620 L1109.010,231.087 L1110.037,232.590 L1111.013,234.126 L1111.938,235.693 L1112.809,237.291 L1113.627,238.917 L1114.390,240.569 L1115.097,242.246 L1115.748,243.945 L1116.342,245.665 L1116.878,247.405 L1117.356,249.161 L1117.775,250.932 L1118.134,252.716 L1118.434,254.511 L1118.674,256.315 L1118.853,258.126 L1118.972,259.942 L1119.030,261.761 L1119.027,263.581 L1118.964,265.399 L1118.840,267.215 L1118.655,269.025 L1118.410,270.829 L1118.345,271.241 L1117.958,273.649 L1118.049,275.010 L1118.031,277.876 L1117.804,280.732 L1117.370,283.564 L1116.731,286.357 L1115.891,289.096 L1114.853,291.766 L1113.623,294.354 L1112.209,296.846 L1110.617,299.228 L1108.855,301.487 L1106.934,303.613 L1104.863,305.593 L1102.653,307.416 L1100.316,309.075 L1097.865,310.558 L1095.313,311.859 L1092.672,312.971 L1089.958,313.888 L1087.183,314.605 L1084.365,315.117 L1081.516,315.423 L1078.652,315.521 L1075.789,315.410 L1072.942,315.091 L1070.126,314.566 L1067.355,313.837 L1064.644,312.908 L1063.991,312.650 L1058.439,310.404 L1052.886,308.157 L1047.334,305.911 L1041.782,303.664 L1036.229,301.418 L1030.677,299.171 L1025.125,296.925 L1019.572,294.678 L1014.020,292.431 L1008.467,290.185 L1002.915,287.938 L997.363,285.692 L991.810,283.445 L986.258,281.199 L980.706,278.952 L975.153,276.706 L969.601,274.459 L964.049,272.213 L958.496,269.966 L952.944,267.719 L950.605,266.773 L948.656,265.932 L946.748,265.002 L944.884,263.985 L943.069,262.883 L941.307,261.699 L939.601,260.435 L937.955,259.094 L936.373,257.678 L934.858,256.192 L933.412,254.637 L932.039,253.017 L930.743,251.336 L929.525,249.597 L928.389,247.803 L927.336,245.960 L926.370,244.070 L925.491,242.137 L924.702,240.166 L924.005,238.160 L923.401,236.125 L922.891,234.064 L922.476,231.982 L922.158,229.883 L921.936,227.772 L921.812,225.652 L921.786,223.529 L921.858,221.407 L922.027,219.291 L922.293,217.185 L922.656,215.093 L923.115,213.020 L923.352,212.093 L924.901,206.307 L926.450,200.521 L926.493,200.362 L927.483,197.222 L928.744,194.181 L930.267,191.261 L932.040,188.487 L934.048,185.878 L936.278,183.455 L938.711,181.237 L941.329,179.240 L944.112,177.480 L947.038,175.971 L950.085,174.724 L953.230,173.749 L956.448,173.052 L959.715,172.640 L962.879,172.516 L968.869,172.532 L974.858,172.549 L980.848,172.565 L986.838,172.582 L992.827,172.598 L997.240,172.611" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M909.837,225.748 L909.808,223.402 L909.898,220.729 L910.110,218.063 L910.446,215.410 L910.903,212.774 L911.481,210.163 L911.781,208.995 L913.330,203.209 L914.879,197.423 L914.921,197.264 L916.227,193.123 L917.890,189.111 L919.899,185.261 L922.237,181.601 L924.886,178.160 L927.827,174.965 L931.036,172.039 L934.489,169.406 L938.159,167.085 L942.019,165.094 L946.038,163.449 L950.186,162.163 L954.430,161.244 L958.739,160.701 L962.912,160.536 L968.902,160.553 L974.891,160.569 L980.881,160.586 L986.871,160.603 L992.860,160.619 L997.273,160.631" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M908.089,225.319 L907.570,223.378 L906.928,220.560 L906.385,217.679 L906.319,217.237 L905.969,214.739 L905.667,211.741 L905.479,208.689 L905.433,207.296 L905.282,201.055 L905.275,200.799 L904.948,194.765 L904.939,194.592 L904.851,188.979 L905.210,183.189 L906.056,177.249 L907.438,171.207 L909.708,165.375 L910.664,163.430 L912.536,159.603 L915.945,153.954 L917.474,151.874 L918.754,149.278 L919.740,148.199 L924.741,143.650 L930.222,139.528 L936.059,135.649 L941.853,130.450 L946.029,127.274 L948.547,126.817 L955.911,126.113 L963.008,126.023 L968.997,126.189 L974.986,126.355 L980.975,126.521 L986.964,126.688 L992.954,126.854 L997.366,126.976" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M997.366,126.976 L997.366,126.976 L1003.355,127.143 L1009.344,127.309 L1015.331,128.382 L1021.315,130.405 L1027.299,132.427 L1031.708,133.917 L1034.344,134.808 L1036.940,135.685 L1039.500,136.550 L1042.027,137.405 L1044.526,138.249 L1046.999,139.085 L1049.452,139.914 L1051.886,140.736 L1054.305,141.554 L1056.712,142.367 L1059.110,143.178 L1061.503,143.987 L1063.894,144.795 L1066.284,145.602 L1068.678,146.412 L1071.079,147.223 L1073.489,148.037 L1075.912,148.856 L1078.351,149.681 L1080.809,150.511 L1083.289,151.349 L1085.796,152.197 L1088.332,153.054 L1090.901,153.922 L1093.508,154.803 L1096.157,155.698 L1098.851,156.609 L1101.597,157.537 L1104.398,158.483 L1107.260,159.450 L1109.784,160.849 L1111.359,163.210 L1111.778,163.800 L1112.820,165.642 L1114.148,168.152 L1115.397,170.685 L1116.568,173.238 L1117.176,174.643 L1119.588,180.333 L1122.000,186.023 L1124.411,191.713 L1126.823,197.402 L1129.234,203.092 L1129.391,203.460 L1131.789,208.674 L1132.752,210.767 L1133.204,211.796 L1133.787,213.539 L1134.630,216.377 L1135.369,219.211 L1136.005,222.038 L1136.542,224.855 L1136.843,226.782 L1137.069,227.614 L1137.696,230.275 L1138.232,232.938 L1138.678,235.598 L1139.034,238.253 L1139.303,240.899 L1139.486,243.535 L1139.584,246.156 L1139.599,248.762 L1139.533,251.348 L1139.386,253.914 L1139.161,256.457 L1138.860,258.974 L1138.484,261.465 L1138.034,263.926 L1137.617,265.874 L1137.462,266.354 L1136.618,268.729 L1135.711,271.053 L1134.746,273.327 L1134.516,273.841 L1134.241,274.453 L1134.225,274.523 L1133.054,278.518 L1132.080,281.175 L1131.777,282.354 L1130.544,286.076 L1129.079,289.659 L1127.397,293.091" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M997.273,160.631 L997.273,160.631 L1003.262,160.648 L1009.252,160.664 L1015.242,160.681 L1021.231,160.698 L1027.221,160.714 L1031.633,160.726 L1033.620,160.757 L1035.605,160.837 L1037.587,160.967 L1039.566,161.147 L1041.539,161.377 L1043.506,161.656 L1045.466,161.985 L1047.416,162.362 L1049.357,162.789 L1051.286,163.264 L1053.202,163.787 L1055.105,164.359 L1056.993,164.978 L1058.865,165.644 L1060.719,166.357 L1062.555,167.117 L1064.371,167.922 L1066.166,168.773 L1067.940,169.668 L1069.690,170.608 L1071.416,171.592 L1073.117,172.618 L1074.792,173.687 L1076.439,174.798 L1078.058,175.950 L1079.647,177.142 L1081.206,178.374 L1082.733,179.644 L1084.228,180.953 L1085.690,182.298 L1087.117,183.680 L1088.510,185.098 L1089.866,186.549 L1091.185,188.035 L1092.467,189.553 L1093.710,191.103 L1094.374,191.965 L1097.997,196.734 L1101.620,201.504 L1105.243,206.273 L1108.866,211.043 L1112.489,215.813 L1116.112,220.582 L1117.473,222.374 L1118.786,224.164 L1120.039,225.996 L1121.229,227.870 L1122.357,229.782 L1123.420,231.731 L1124.417,233.714 L1125.348,235.729 L1126.211,237.775 L1127.005,239.847 L1127.729,241.946 L1128.383,244.067 L1128.966,246.209 L1129.477,248.369 L1129.915,250.545 L1130.281,252.735 L1130.573,254.935 L1130.792,257.145 L1130.937,259.360 L1131.008,261.578 L1131.004,263.798 L1130.927,266.017 L1130.776,268.231 L1130.550,270.440 L1130.252,272.639 L1130.173,273.143 L1129.996,274.243 L1130.023,274.649 L1129.999,278.387 L1129.704,282.113 L1129.138,285.808 L1128.304,289.452 L1127.207,293.025 L1125.853,296.509 L1124.249,299.886 L1122.404,303.136 L1120.326,306.244 L1118.028,309.192 L1115.522,311.964 L1112.820,314.547 L1109.937,316.927 L1106.889,319.090 L1103.691,321.026 L1100.361,322.723 L1096.916,324.174 L1093.374,325.370 L1089.755,326.305 L1086.078,326.973 L1082.361,327.373 L1078.625,327.501 L1074.890,327.356 L1071.176,326.940 L1067.501,326.254 L1063.886,325.303 L1060.350,324.091 L1059.498,323.755 L1053.946,321.509 L1048.393,319.262 L1042.841,317.016 L1037.289,314.769 L1031.736,312.522 L1026.184,310.276 L1020.632,308.029 L1015.079,305.783 L1009.527,303.536 L1003.974,301.290 L998.422,299.043 L992.870,296.797 L987.317,294.550 L981.765,292.303 L976.213,290.057 L970.660,287.810 L965.108,285.564 L959.555,283.317 L954.003,281.071 L948.451,278.824 L946.112,277.878 L943.657,276.818 L941.253,275.646 L938.905,274.365 L936.619,272.977 L934.399,271.486 L932.250,269.893 L930.177,268.204 L928.183,266.421 L926.274,264.548 L924.453,262.589 L922.724,260.549 L921.091,258.431 L919.557,256.240 L918.125,253.981 L916.799,251.658 L915.581,249.277 L914.475,246.843 L913.481,244.359 L912.602,241.833 L911.841,239.269 L911.528,238.005" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M997.150,204.954 L1031.511,205.049 L1059.079,218.775 L1082.178,249.185 L1086.411,266.108 L1085.852,269.586 L1085.686,275.478 L1076.123,282.668 L962.737,236.790 L954.596,220.457 L957.737,208.727 L962.790,204.859" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M980.777,218.290 L1000.077,220.070 L1004.677,220.495 L1015.657,219.403" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M954.979,228.789 L958.085,227.241 L978.222,223.468 L999.582,225.438 L1004.182,225.863 L1038.025,207.217 L1038.733,205.829" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M956.315,231.469 L959.421,229.921 L977.947,226.450 L999.307,228.421 L1003.907,228.845 L1040.693,208.578 L1041.698,206.606" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M983.626,232.388 L998.812,233.788 L1003.412,234.213 L1026.365,229.939" data-layer="EXP_-_EW_-_BANKS_&amp;_CUTTINGS" />
+    <path d="M115.184,437.723 L117.255,437.315" data-layer="EXP - WORKING" />
+    <path d="M116.616,441.821 L117.324,440.766" data-layer="EXP - WORKING" />
+    <path d="M169.172,430.555 L170.227,431.263" data-layer="EXP - WORKING" />
+    <path d="M169.699,430.909 L116.970,441.294 L116.219,437.519" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M327.596,659.843 L327.687,657.733" data-layer="EXP - WORKING" />
+    <path d="M314.240,658.656 L315.176,657.797" data-layer="EXP - WORKING" />
+    <path d="M316.840,598.007 L317.699,598.943" data-layer="EXP - WORKING" />
+    <path d="M317.270,598.475 L314.708,658.226 L327.642,658.781" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M364.591,662.171 L364.745,658.580" data-layer="EXP - WORKING" />
+    <path d="M432.243,662.455 L432.012,667.841" data-layer="EXP - WORKING" />
+    <path d="M432.017,667.716 L432.502,656.743" data-layer="EXP - STEPS" />
+    <path d="M528.740,660.581 L529.676,659.722" data-layer="EXP - WORKING" />
+    <path d="M531.080,605.991 L531.939,606.927" data-layer="EXP - WORKING" />
+    <path d="M531.510,606.459 L529.208,660.151" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M629.955,671.345 L629.967,676.893" data-layer="EXP - STEPS" />
+    <path d="M435.766,601.905 L436.626,602.841" data-layer="EXP - WORKING" />
+    <path d="M433.426,656.496 L434.363,655.636" data-layer="EXP - WORKING" />
+    <path d="M433.895,656.066 L436.196,602.373" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M631.307,669.987 L632.204,669.087" data-layer="EXP - WORKING" />
+    <path d="M631.177,609.283 L632.078,610.179" data-layer="EXP - WORKING" />
+    <path d="M631.627,609.731 L631.756,669.537" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M742.196,662.911 L743.093,662.010" data-layer="EXP - WORKING" />
+    <path d="M742.080,608.270 L742.980,609.167" data-layer="EXP - WORKING" />
+    <path d="M742.530,608.719 L742.644,662.461" data-layer="EXP - UNDERBUILD" />
+    <path d="M881.023,648.726 L880.125,648.738" data-layer="EXP - WORKING" />
+    <path d="M881.058,651.420 L880.148,650.533" data-layer="EXP - WORKING" />
+    <path d="M830.465,652.067 L831.351,651.157" data-layer="EXP - WORKING" />
+    <path d="M830.908,651.612 L880.603,650.976 L880.574,648.732" data-layer="EXP - UNDERBUILD" />
+    <path d="M1063.700,373.719 L1068.459,383.621 L1079.132,385.828 L1091.091,380.333 L1103.297,374.724 L1114.337,369.652 L1123.022,365.662 L1130.563,362.197 L1138.068,358.609 L1132.086,349.223 L1123.568,344.528 L1110.972,350.670 L1100.491,355.780 L1087.102,362.308 L1078.388,366.557" data-layer="EXP - WORKING" />
+    <path d="M172.833,404.278 L177.795,429.333" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M172.657,431.146 L167.559,405.316" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M127.343,501.514 L132.442,499.768" data-layer="EXP - STEPS" />
+    <path d="M137.443,531.009 L142.543,529.262" data-layer="EXP - STEPS" />
+    <path d="M130.197,359.236 L135.489,358.207" data-layer="EXP - STEPS" />
+    <path d="M352.471,593.524 L347.086,593.272" data-layer="EXP - STEPS" />
+    <path d="M352.555,591.729 L347.170,591.477" data-layer="EXP - STEPS" />
+    <path d="M352.471,593.524 L352.636,589.479" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M347.086,593.272 L347.250,589.286" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M460.536,596.963 L455.151,596.712" data-layer="EXP - STEPS" />
+    <path d="M460.620,595.168 L455.235,594.917" data-layer="EXP - STEPS" />
+    <path d="M460.536,596.963 L460.683,593.351" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M455.151,596.712 L455.297,593.158" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M890.435,634.086 L890.504,639.476" data-layer="EXP - STEPS" />
+    <path d="M892.232,634.063 L892.301,639.453" data-layer="EXP - STEPS" />
+    <path d="M894.029,634.040 L894.098,639.430" data-layer="EXP - STEPS" />
+    <path d="M1269.292,623.451 L1274.176,621.183" data-layer="EXP - STEPS" />
+    <path d="M545.243,538.431 L539.858,538.179" data-layer="EXP - STEPS" />
+    <path d="M545.327,536.636 L539.942,536.384" data-layer="EXP - STEPS" />
+    <path d="M545.162,540.681 L545.327,536.636" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M539.777,540.430 L539.941,536.443" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M825.023,520.509 L827.102,520.485" data-layer="EXP - WORKING" />
+    <path d="M825.720,530.609 L826.608,529.700" data-layer="EXP - WORKING" />
+    <path d="M855.357,529.373 L855.367,530.271" data-layer="EXP - WORKING" />
+    <path d="M855.362,529.822 L826.164,530.154 L826.063,520.497" data-layer="EXP-EW-RAISED-DPC" />
+    <path d="M632.884,511.466 L633.349,541.605" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M627.494,511.549 L627.868,535.784" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M824.922,514.385 L827.033,514.361" data-layer="EXP - WORKING" />
+    <path d="M825.321,495.512 L826.229,496.400" data-layer="EXP - WORKING" />
+    <path d="M863.301,494.465 L863.325,496.577" data-layer="EXP - WORKING" />
+    <path d="M825.977,514.373 L825.775,495.956 L863.313,495.528" data-layer="EXP - UNDERBUILD" />
+    <path d="M804.098,475.932 L806.115,475.909" data-layer="EXP - WORKING" />
+    <path d="M804.738,475.925 L804.649,464.199" data-layer="EXP - TANKING" />
+    <path d="M821.259,536.812 L821.182,532.764" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M815.869,536.884 L815.793,532.895" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M855.818,536.301 L861.193,536.218" data-layer="EXP - STEPS" />
+    <path d="M855.846,538.097 L861.221,538.014" data-layer="EXP - STEPS" />
+    <path d="M912.132,535.639 L917.506,535.556" data-layer="EXP - STEPS" />
+    <path d="M979.109,528.732 L979.031,524.684" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M973.719,528.804 L973.643,524.815" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M1013.671,528.221 L1019.046,528.138" data-layer="EXP - STEPS" />
+    <path d="M1013.643,526.424 L1019.018,526.341" data-layer="EXP - STEPS" />
+    <path d="M1013.699,530.018 L1019.074,529.935" data-layer="EXP - STEPS" />
+    <path d="M824.861,260.188 L827.627,274.126" data-layer="EXP - STEPS" />
+    <path d="M492.233,320.588 L507.819,317.447" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M509.954,408.530 L527.610,404.972" data-layer="EXP-EW-PLOT-WALLS" />
+    <path d="M564.447,375.668 L568.802,397.276" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M546.727,287.725 L551.081,309.334" data-layer="EXP-EW-LEVEL-LANDING" />
+    <path d="M230.209,370.996 L231.160,376.303" data-layer="EXP - STEPS" />
+    <path d="M143.576,548.920 L147.652,560.822" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1178.909,690.242 L1179.715,746.271" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1186.756,696.202 L1187.372,738.496" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1187.372,738.496 L1223.604,741.997 L1223.117,701.374" data-layer="EXP - RETAINING WALLS GRAVEL BOARD" />
+    <path d="M1241.551,628.373 L1248.215,628.293 L1248.537,654.488" data-layer="EXP - UNDERBUILD" />
+    <path d="M375.811,389.174 L429.311,378.673" data-layer="EXP - WORKING" />
+    <path d="M371.741,401.082 L438.327,387.942" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M416.986,278.560 L459.152,270.064" data-layer="EXP - WORKING" />
+    <path d="M482.617,300.155 L465.895,303.524" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M1029.940,468.982 L1029.818,458.202 L1001.304,458.526 L1001.196,449.090" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M281.841,417.109 L286.963,443.003 L305.041,439.428" data-layer="EXP - TANKING" />
+    <path d="M270.157,420.076 L246.461,424.612" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M261.562,413.863 L268.698,412.456 L270.157,420.076 L281.364,417.859" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M464.588,470.740 L469.334,470.905 L469.161,475.731" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M464.836,463.810 L477.515,464.264 L477.682,459.601 L489.256,460.016" data-layer="EXP - RETAINING WALLS - 0.6m" />
+    <path d="M798.449,367.165 L818.526,334.881" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M758.084,298.401 L726.404,304.879" data-layer="EXP-EW-DESIGN-LINES" />
+    <path d="M666.667,463.684 L666.572,456.763" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M670.271,463.647 L668.459,456.737" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M666.718,469.072 L666.779,474.462" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M670.312,469.038 L670.373,474.421" data-layer="EXP-EW-BANKS&amp;CUTTINGS" />
+    <path d="M1077.719,688.335 L1077.259,649.971" data-layer="EXP - UNDERBUILD" />
+  </g>
+  <g id="survey-points">
+    <rect x="950.756" y="1476.000" width="4.193" height="4.193" fill="#00afa6" stroke="#000" stroke-width="0.3" />
+    <rect x="962.729" y="1476.398" width="4.193" height="4.193" fill="#00a9bc" stroke="#000" stroke-width="0.3" />
+    <rect x="1070.482" y="1479.984" width="4.193" height="4.193" fill="#008bd6" stroke="#000" stroke-width="0.3" />
+    <rect x="1118.373" y="1481.578" width="4.193" height="4.193" fill="#008bd6" stroke="#000" stroke-width="0.3" />
+    <rect x="1147.323" y="1404.723" width="4.193" height="4.193" fill="#00b397" stroke="#000" stroke-width="0.3" />
+    <rect x="1316.779" y="1490.884" width="4.193" height="4.193" fill="#0029be" stroke="#000" stroke-width="0.3" />
+    <rect x="1364.656" y="1492.838" width="4.193" height="4.193" fill="#0029be" stroke="#000" stroke-width="0.3" />
+    <rect x="1488.863" y="1110.819" width="4.193" height="4.193" fill="#00b19d" stroke="#000" stroke-width="0.3" />
+    <rect x="1150.052" y="1397.542" width="4.193" height="4.193" fill="#00b397" stroke="#000" stroke-width="0.3" />
+    <rect x="1327.353" y="1505.709" width="4.193" height="4.193" fill="#000cb7" stroke="#000" stroke-width="0.3" />
+    <rect x="1486.534" y="1374.950" width="4.193" height="4.193" fill="#00a1d5" stroke="#000" stroke-width="0.3" />
+    <rect x="1460.660" y="1125.272" width="4.193" height="4.193" fill="#00abb4" stroke="#000" stroke-width="0.3" />
+    <rect x="1517.301" y="1308.697" width="4.193" height="4.193" fill="#00a1d5" stroke="#000" stroke-width="0.3" />
+    <rect x="1405.461" y="1046.572" width="4.193" height="4.193" fill="#00c559" stroke="#000" stroke-width="0.3" />
+    <rect x="1135.777" y="1466.243" width="4.193" height="4.193" fill="#0079d2" stroke="#000" stroke-width="0.3" />
+    <rect x="912.342" y="1414.072" width="4.193" height="4.193" fill="#00c750" stroke="#000" stroke-width="0.3" />
+    <rect x="966.069" y="1414.194" width="4.193" height="4.193" fill="#00c750" stroke="#000" stroke-width="0.3" />
+    <rect x="992.932" y="1414.255" width="4.193" height="4.193" fill="#00c168" stroke="#000" stroke-width="0.3" />
+    <rect x="1033.227" y="1414.347" width="4.193" height="4.193" fill="#00c168" stroke="#000" stroke-width="0.3" />
+    <rect x="1118.724" y="1414.541" width="4.193" height="4.193" fill="#00ba7f" stroke="#000" stroke-width="0.3" />
+    <rect x="1376.683" y="946.075" width="4.193" height="4.193" fill="#13c949" stroke="#000" stroke-width="0.3" />
+    <rect x="1343.486" y="1021.602" width="4.193" height="4.193" fill="#04c84e" stroke="#000" stroke-width="0.3" />
+    <rect x="1350.454" y="1058.984" width="4.193" height="4.193" fill="#00c06b" stroke="#000" stroke-width="0.3" />
+    <rect x="1433.833" y="1047.152" width="4.193" height="4.193" fill="#00bb7c" stroke="#000" stroke-width="0.3" />
+    <rect x="1414.907" y="1059.599" width="4.193" height="4.193" fill="#00b982" stroke="#000" stroke-width="0.3" />
+    <rect x="1491.029" y="1067.474" width="4.193" height="4.193" fill="#00ba7e" stroke="#000" stroke-width="0.3" />
+    <rect x="1393.008" y="1068.515" width="4.193" height="4.193" fill="#00bc78" stroke="#000" stroke-width="0.3" />
+    <rect x="1206.701" y="1077.999" width="4.193" height="4.193" fill="#09c84c" stroke="#000" stroke-width="0.3" />
+    <rect x="1258.216" y="1156.965" width="4.193" height="4.193" fill="#00c167" stroke="#000" stroke-width="0.3" />
+    <rect x="1206.143" y="1211.413" width="4.193" height="4.193" fill="#00bc79" stroke="#000" stroke-width="0.3" />
+    <rect x="1301.640" y="1238.236" width="4.193" height="4.193" fill="#00acb1" stroke="#000" stroke-width="0.3" />
+    <rect x="1385.798" y="1218.669" width="4.193" height="4.193" fill="#00abb3" stroke="#000" stroke-width="0.3" />
+    <rect x="1459.836" y="1123.782" width="4.193" height="4.193" fill="#00abb4" stroke="#000" stroke-width="0.3" />
+    <rect x="1395.037" y="1060.940" width="4.193" height="4.193" fill="#00be70" stroke="#000" stroke-width="0.3" />
+    <rect x="1432.923" y="1332.422" width="4.193" height="4.193" fill="#00a1d5" stroke="#000" stroke-width="0.3" />
+    <rect x="1384.501" y="1336.415" width="4.193" height="4.193" fill="#00a5c9" stroke="#000" stroke-width="0.3" />
+    <rect x="1328.147" y="1364.380" width="4.193" height="4.193" fill="#00a1d5" stroke="#000" stroke-width="0.3" />
+    <rect x="1198.547" y="1500.005" width="4.193" height="4.193" fill="#0064cd" stroke="#000" stroke-width="0.3" />
+    <rect x="1398.128" y="1404.988" width="4.193" height="4.193" fill="#0085d5" stroke="#000" stroke-width="0.3" />
+    <rect x="1459.153" y="1433.753" width="4.193" height="4.193" fill="#005fcb" stroke="#000" stroke-width="0.3" />
+    <rect x="1100.366" y="1070.833" width="4.193" height="4.193" fill="#15c948" stroke="#000" stroke-width="0.3" />
+    <rect x="1140.795" y="1419.409" width="4.193" height="4.193" fill="#00acae" stroke="#000" stroke-width="0.3" />
+    <rect x="1223.065" y="1341.311" width="4.193" height="4.193" fill="#00aab7" stroke="#000" stroke-width="0.3" />
+    <rect x="897.370" y="1463.208" width="4.193" height="4.193" fill="#00b0a3" stroke="#000" stroke-width="0.3" />
+    <rect x="1070.024" y="1513.398" width="4.193" height="4.193" fill="#006ecf" stroke="#000" stroke-width="0.3" />
+    <rect x="1118.915" y="1589.943" width="4.193" height="4.193" fill="#0059ca" stroke="#000" stroke-width="0.3" />
+    <rect x="889.449" y="1700.972" width="4.193" height="4.193" fill="#00a5c8" stroke="#000" stroke-width="0.3" />
+    <rect x="1007.347" y="1710.817" width="4.193" height="4.193" fill="#0071d0" stroke="#000" stroke-width="0.3" />
+    <rect x="881.751" y="1717.714" width="4.193" height="4.193" fill="#009bda" stroke="#000" stroke-width="0.3" />
+    <rect x="1088.244" y="1713.577" width="4.193" height="4.193" fill="#004ec7" stroke="#000" stroke-width="0.3" />
+    <rect x="1152.369" y="1722.950" width="4.193" height="4.193" fill="#0034c1" stroke="#000" stroke-width="0.3" />
+    <rect x="1178.265" y="1716.630" width="4.193" height="4.193" fill="#003dc3" stroke="#000" stroke-width="0.3" />
+    <rect x="1006.148" y="1726.575" width="4.193" height="4.193" fill="#0057c9" stroke="#000" stroke-width="0.3" />
+    <rect x="1134.041" y="1736.621" width="4.193" height="4.193" fill="#001aba" stroke="#000" stroke-width="0.3" />
+    <rect x="1189.571" y="1736.982" width="4.193" height="4.193" fill="#001aba" stroke="#000" stroke-width="0.3" />
+    <rect x="1196.926" y="1734.550" width="4.193" height="4.193" fill="#0017b9" stroke="#000" stroke-width="0.3" />
+    <rect x="1250.954" y="1738.518" width="4.193" height="4.193" fill="#0000b4" stroke="#000" stroke-width="0.3" />
+    <rect x="986.707" y="1629.972" width="4.193" height="4.193" fill="#0098da" stroke="#000" stroke-width="0.3" />
+    <rect x="1118.805" y="1628.859" width="4.193" height="4.193" fill="#0057c9" stroke="#000" stroke-width="0.3" />
+    <rect x="1141.414" y="1703.089" width="4.193" height="4.193" fill="#0037c1" stroke="#000" stroke-width="0.3" />
+    <rect x="1152.471" y="1637.494" width="4.193" height="4.193" fill="#0041c4" stroke="#000" stroke-width="0.3" />
+    <rect x="1144.742" y="1648.078" width="4.193" height="4.193" fill="#003dc3" stroke="#000" stroke-width="0.3" />
+    <rect x="1263.166" y="1653.739" width="4.193" height="4.193" fill="#000eb7" stroke="#000" stroke-width="0.3" />
+    <rect x="1260.535" y="1713.785" width="4.193" height="4.193" fill="#0005b5" stroke="#000" stroke-width="0.3" />
+    <rect x="70.176" y="384.061" width="4.193" height="4.193" fill="#e56c00" stroke="#000" stroke-width="0.3" />
+    <rect x="76.557" y="406.133" width="4.193" height="4.193" fill="#e56c00" stroke="#000" stroke-width="0.3" />
+    <rect x="81.774" y="421.254" width="4.193" height="4.193" fill="#e34d00" stroke="#000" stroke-width="0.3" />
+    <rect x="96.712" y="464.062" width="4.193" height="4.193" fill="#e13f00" stroke="#000" stroke-width="0.3" />
+    <rect x="127.824" y="554.706" width="4.193" height="4.193" fill="#dd0c00" stroke="#000" stroke-width="0.3" />
+    <rect x="1050.255" y="628.708" width="4.193" height="4.193" fill="#66d02d" stroke="#000" stroke-width="0.3" />
+    <rect x="1051.837" y="724.556" width="4.193" height="4.193" fill="#71d12a" stroke="#000" stroke-width="0.3" />
+    <rect x="1168.277" y="723.795" width="4.193" height="4.193" fill="#00c55a" stroke="#000" stroke-width="0.3" />
+    <rect x="1330.182" y="696.035" width="4.193" height="4.193" fill="#00c654" stroke="#000" stroke-width="0.3" />
+    <rect x="367.942" y="424.706" width="4.193" height="4.193" fill="#d8da07" stroke="#000" stroke-width="0.3" />
+    <rect x="438.515" y="411.083" width="4.193" height="4.193" fill="#8cd321" stroke="#000" stroke-width="0.3" />
+    <rect x="522.059" y="461.109" width="4.193" height="4.193" fill="#eaa200" stroke="#000" stroke-width="0.3" />
+    <rect x="390.387" y="455.990" width="4.193" height="4.193" fill="#e67800" stroke="#000" stroke-width="0.3" />
+    <rect x="628.196" y="454.811" width="4.193" height="4.193" fill="#dfda05" stroke="#000" stroke-width="0.3" />
+    <rect x="942.898" y="474.143" width="4.193" height="4.193" fill="#3dcd3b" stroke="#000" stroke-width="0.3" />
+    <rect x="686.184" y="386.747" width="4.193" height="4.193" fill="#70d12a" stroke="#000" stroke-width="0.3" />
+    <rect x="753.207" y="383.052" width="4.193" height="4.193" fill="#4ace37" stroke="#000" stroke-width="0.3" />
+    <rect x="715.382" y="395.060" width="4.193" height="4.193" fill="#69d02c" stroke="#000" stroke-width="0.3" />
+    <rect x="656.179" y="234.016" width="4.193" height="4.193" fill="#00c167" stroke="#000" stroke-width="0.3" />
+    <rect x="735.189" y="269.885" width="4.193" height="4.193" fill="#00b58f" stroke="#000" stroke-width="0.3" />
+    <rect x="742.311" y="305.110" width="4.193" height="4.193" fill="#00b58f" stroke="#000" stroke-width="0.3" />
+    <rect x="747.059" y="328.593" width="4.193" height="4.193" fill="#00b983" stroke="#000" stroke-width="0.3" />
+    <rect x="769.814" y="356.991" width="4.193" height="4.193" fill="#00bd74" stroke="#000" stroke-width="0.3" />
+    <rect x="948.013" y="447.575" width="4.193" height="4.193" fill="#04c84e" stroke="#000" stroke-width="0.3" />
+    <rect x="1015.702" y="420.300" width="4.193" height="4.193" fill="#00c165" stroke="#000" stroke-width="0.3" />
+    <rect x="1144.487" y="348.705" width="4.193" height="4.193" fill="#00aea8" stroke="#000" stroke-width="0.3" />
+    <rect x="1182.754" y="430.056" width="4.193" height="4.193" fill="#00b29c" stroke="#000" stroke-width="0.3" />
+    <rect x="445.143" y="681.080" width="4.193" height="4.193" fill="#e35300" stroke="#000" stroke-width="0.3" />
+    <rect x="1058.568" y="695.209" width="4.193" height="4.193" fill="#49ce37" stroke="#000" stroke-width="0.3" />
+    <rect x="452.260" y="458.690" width="4.193" height="4.193" fill="#e88e00" stroke="#000" stroke-width="0.3" />
+    <rect x="531.836" y="461.585" width="4.193" height="4.193" fill="#eaa200" stroke="#000" stroke-width="0.3" />
+    <rect x="646.654" y="454.910" width="4.193" height="4.193" fill="#dfda05" stroke="#000" stroke-width="0.3" />
+    <rect x="671.373" y="311.214" width="4.193" height="4.193" fill="#18ca47" stroke="#000" stroke-width="0.3" />
+    <rect x="712.868" y="690.488" width="4.193" height="4.193" fill="#efd800" stroke="#000" stroke-width="0.3" />
+    <rect x="630.552" y="690.664" width="4.193" height="4.193" fill="#ecb300" stroke="#000" stroke-width="0.3" />
+    <rect x="606.723" y="688.311" width="4.193" height="4.193" fill="#eba700" stroke="#000" stroke-width="0.3" />
+    <rect x="594.815" y="687.003" width="4.193" height="4.193" fill="#e99900" stroke="#000" stroke-width="0.3" />
+    <rect x="511.000" y="683.899" width="4.193" height="4.193" fill="#e77d00" stroke="#000" stroke-width="0.3" />
+    <rect x="499.031" y="683.386" width="4.193" height="4.193" fill="#e66f00" stroke="#000" stroke-width="0.3" />
+    <rect x="399.472" y="679.118" width="4.193" height="4.193" fill="#e13700" stroke="#000" stroke-width="0.3" />
+    <rect x="292.590" y="674.537" width="4.193" height="4.193" fill="#de1800" stroke="#000" stroke-width="0.3" />
+    <rect x="116.325" y="509.437" width="4.193" height="4.193" fill="#e24600" stroke="#000" stroke-width="0.3" />
+    <rect x="714.304" y="679.508" width="4.193" height="4.193" fill="#c8d80d" stroke="#000" stroke-width="0.3" />
+    <rect x="588.484" y="653.529" width="4.193" height="4.193" fill="#edc200" stroke="#000" stroke-width="0.3" />
+    <rect x="522.591" y="259.411" width="4.193" height="4.193" fill="#00c06b" stroke="#000" stroke-width="0.3" />
+    <rect x="534.313" y="318.391" width="4.193" height="4.193" fill="#04c84e" stroke="#000" stroke-width="0.3" />
+    <rect x="493.487" y="674.227" width="4.193" height="4.193" fill="#e99300" stroke="#000" stroke-width="0.3" />
+    <rect x="387.587" y="479.704" width="4.193" height="4.193" fill="#e67800" stroke="#000" stroke-width="0.3" />
+    <rect x="119.643" y="506.347" width="4.193" height="4.193" fill="#e24600" stroke="#000" stroke-width="0.3" />
+    <rect x="1144.174" y="724.343" width="4.193" height="4.193" fill="#00c55a" stroke="#000" stroke-width="0.3" />
+    <rect x="1167.885" y="724.168" width="4.193" height="4.193" fill="#00c55a" stroke="#000" stroke-width="0.3" />
+    <rect x="336.409" y="676.415" width="4.193" height="4.193" fill="#df2200" stroke="#000" stroke-width="0.3" />
+    <rect x="1203.113" y="473.760" width="4.193" height="4.193" fill="#00b78a" stroke="#000" stroke-width="0.3" />
+    <rect x="426.255" y="457.745" width="4.193" height="4.193" fill="#e66f00" stroke="#000" stroke-width="0.3" />
+    <rect x="455.429" y="465.053" width="4.193" height="4.193" fill="#e78300" stroke="#000" stroke-width="0.3" />
+    <rect x="401.062" y="386.576" width="4.193" height="4.193" fill="#55cf33" stroke="#000" stroke-width="0.3" />
+    <rect x="277.981" y="403.366" width="4.193" height="4.193" fill="#eed000" stroke="#000" stroke-width="0.3" />
+    <rect x="266.587" y="406.948" width="4.193" height="4.193" fill="#eed000" stroke="#000" stroke-width="0.3" />
+    <rect x="1199.158" y="724.086" width="4.193" height="4.193" fill="#00c45d" stroke="#000" stroke-width="0.3" />
+    <rect x="1031.071" y="592.389" width="4.193" height="4.193" fill="#5fcf30" stroke="#000" stroke-width="0.3" />
+    <rect x="1026.995" y="597.004" width="4.193" height="4.193" fill="#5fcf30" stroke="#000" stroke-width="0.3" />
+    <rect x="132.926" y="363.547" width="4.193" height="4.193" fill="#e88b00" stroke="#000" stroke-width="0.3" />
+    <rect x="94.749" y="365.599" width="4.193" height="4.193" fill="#e99400" stroke="#000" stroke-width="0.3" />
+    <rect x="188.155" y="463.779" width="4.193" height="4.193" fill="#e45c00" stroke="#000" stroke-width="0.3" />
+    <rect x="158.079" y="546.657" width="4.193" height="4.193" fill="#e02e00" stroke="#000" stroke-width="0.3" />
+    <rect x="432.587" y="592.259" width="4.193" height="4.193" fill="#e13700" stroke="#000" stroke-width="0.3" />
+    <rect x="627.203" y="603.170" width="4.193" height="4.193" fill="#aed615" stroke="#000" stroke-width="0.3" />
+    <rect x="645.175" y="603.995" width="4.193" height="4.193" fill="#eed000" stroke="#000" stroke-width="0.3" />
+    <rect x="755.659" y="602.923" width="4.193" height="4.193" fill="#bad711" stroke="#000" stroke-width="0.3" />
+    <rect x="969.774" y="648.517" width="4.193" height="4.193" fill="#62d02f" stroke="#000" stroke-width="0.3" />
+    <rect x="965.484" y="634.680" width="4.193" height="4.193" fill="#5fcf30" stroke="#000" stroke-width="0.3" />
+    <rect x="1082.830" y="404.600" width="4.193" height="4.193" fill="#00afa6" stroke="#000" stroke-width="0.3" />
+    <rect x="791.147" y="478.495" width="4.193" height="4.193" fill="#69d02c" stroke="#000" stroke-width="0.3" />
+    <rect x="1042.590" y="417.524" width="4.193" height="4.193" fill="#00aeaa" stroke="#000" stroke-width="0.3" />
+    <rect x="982.372" y="378.546" width="4.193" height="4.193" fill="#00a6c3" stroke="#000" stroke-width="0.3" />
+    <rect x="940.655" y="346.338" width="4.193" height="4.193" fill="#00a1d5" stroke="#000" stroke-width="0.3" />
+    <rect x="956.890" y="359.147" width="4.193" height="4.193" fill="#00a1d5" stroke="#000" stroke-width="0.3" />
+    <rect x="753.900" y="235.990" width="4.193" height="4.193" fill="#0073d0" stroke="#000" stroke-width="0.3" />
+    <rect x="591.907" y="291.736" width="4.193" height="4.193" fill="#00c55a" stroke="#000" stroke-width="0.3" />
+    <rect x="591.116" y="328.836" width="4.193" height="4.193" fill="#27cb42" stroke="#000" stroke-width="0.3" />
+    <rect x="578.884" y="272.769" width="4.193" height="4.193" fill="#00c35f" stroke="#000" stroke-width="0.3" />
+    <rect x="582.385" y="253.712" width="4.193" height="4.193" fill="#00c06b" stroke="#000" stroke-width="0.3" />
+    <rect x="546.138" y="350.874" width="4.193" height="4.193" fill="#36cc3d" stroke="#000" stroke-width="0.3" />
+    <rect x="548.619" y="309.347" width="4.193" height="4.193" fill="#05c84e" stroke="#000" stroke-width="0.3" />
+    <rect x="525.958" y="264.102" width="4.193" height="4.193" fill="#00c165" stroke="#000" stroke-width="0.3" />
+    <rect x="104.496" y="514.558" width="4.193" height="4.193" fill="#dd1500" stroke="#000" stroke-width="0.3" />
+    <rect x="109.409" y="527.480" width="4.193" height="4.193" fill="#dc0000" stroke="#000" stroke-width="0.3" />
+    <rect x="120.357" y="559.934" width="4.193" height="4.193" fill="#dc0000" stroke="#000" stroke-width="0.3" />
+    <rect x="342.361" y="686.103" width="4.193" height="4.193" fill="#dd1500" stroke="#000" stroke-width="0.3" />
+    <rect x="353.435" y="685.946" width="4.193" height="4.193" fill="#df2800" stroke="#000" stroke-width="0.3" />
+    <rect x="405.687" y="688.131" width="4.193" height="4.193" fill="#df2b00" stroke="#000" stroke-width="0.3" />
+    <rect x="415.582" y="687.835" width="4.193" height="4.193" fill="#e24700" stroke="#000" stroke-width="0.3" />
+    <rect x="450.112" y="689.643" width="4.193" height="4.193" fill="#e24700" stroke="#000" stroke-width="0.3" />
+    <rect x="460.873" y="689.084" width="4.193" height="4.193" fill="#e46200" stroke="#000" stroke-width="0.3" />
+    <rect x="447.281" y="671.388" width="4.193" height="4.193" fill="#e67800" stroke="#000" stroke-width="0.3" />
+    <rect x="496.317" y="690.954" width="4.193" height="4.193" fill="#e46200" stroke="#000" stroke-width="0.3" />
+    <rect x="509.880" y="691.560" width="4.193" height="4.193" fill="#e67000" stroke="#000" stroke-width="0.3" />
+    <rect x="545.505" y="693.494" width="4.193" height="4.193" fill="#e67000" stroke="#000" stroke-width="0.3" />
+    <rect x="558.768" y="693.448" width="4.193" height="4.193" fill="#e78300" stroke="#000" stroke-width="0.3" />
+    <rect x="593.744" y="695.215" width="4.193" height="4.193" fill="#e88c00" stroke="#000" stroke-width="0.3" />
+    <rect x="607.431" y="695.357" width="4.193" height="4.193" fill="#ea9a00" stroke="#000" stroke-width="0.3" />
+    <rect x="670.438" y="690.628" width="4.193" height="4.193" fill="#eecf00" stroke="#000" stroke-width="0.3" />
+    <rect x="657.009" y="690.494" width="4.193" height="4.193" fill="#ecb300" stroke="#000" stroke-width="0.3" />
+    <rect x="688.384" y="683.063" width="4.193" height="4.193" fill="#d2d909" stroke="#000" stroke-width="0.3" />
+    <rect x="1135.779" y="733.220" width="4.193" height="4.193" fill="#00c751" stroke="#000" stroke-width="0.3" />
+    <rect x="1199.211" y="713.540" width="4.193" height="4.193" fill="#00bd74" stroke="#000" stroke-width="0.3" />
+    <rect x="430.714" y="446.691" width="4.193" height="4.193" fill="#e99400" stroke="#000" stroke-width="0.3" />
+    <rect x="445.114" y="447.552" width="4.193" height="4.193" fill="#ecb000" stroke="#000" stroke-width="0.3" />
+    <rect x="872.733" y="474.934" width="4.193" height="4.193" fill="#6fd12a" stroke="#000" stroke-width="0.3" />
+    <rect x="692.528" y="265.895" width="4.193" height="4.193" fill="#00ba80" stroke="#000" stroke-width="0.3" />
+    <rect x="689.274" y="287.202" width="4.193" height="4.193" fill="#00c264" stroke="#000" stroke-width="0.3" />
+    <rect x="701.542" y="341.836" width="4.193" height="4.193" fill="#35cc3e" stroke="#000" stroke-width="0.3" />
+    <rect x="483.491" y="448.765" width="4.193" height="4.193" fill="#eecc00" stroke="#000" stroke-width="0.3" />
+  </g>
+  <g id="labels" font-family="monospace" font-size="5" fill="#ffffff" text-anchor="middle">
+    <text x="952.85" y="1474.50">116.390</text>
+    <text x="964.82" y="1474.90">115.840</text>
+    <text x="1072.58" y="1478.48">114.565</text>
+    <text x="1120.47" y="1480.08">114.565</text>
+    <text x="1149.42" y="1403.22">116.775</text>
+    <text x="1318.88" y="1489.38">112.390</text>
+    <text x="1366.75" y="1491.34">112.390</text>
+    <text x="1490.96" y="1109.32">116.615</text>
+    <text x="1152.15" y="1396.04">116.775</text>
+    <text x="1329.45" y="1504.21">111.750</text>
+    <text x="1488.63" y="1373.45">115.200</text>
+    <text x="1462.76" y="1123.77">116.025</text>
+    <text x="1519.40" y="1307.20">115.200</text>
+    <text x="1407.56" y="1045.07">118.340</text>
+    <text x="1137.87" y="1464.74">114.175</text>
+    <text x="914.44" y="1412.57">118.575</text>
+    <text x="968.17" y="1412.69">118.575</text>
+    <text x="995.03" y="1412.76">117.975</text>
+    <text x="1035.32" y="1412.85">117.975</text>
+    <text x="1120.82" y="1413.04">117.375</text>
+    <text x="1378.78" y="944.58">118.875</text>
+    <text x="1345.58" y="1020.10">118.650</text>
+    <text x="1352.55" y="1057.48">117.900</text>
+    <text x="1435.93" y="1045.65">117.460</text>
+    <text x="1417.00" y="1058.10">117.300</text>
+    <text x="1493.13" y="1065.97">117.400</text>
+    <text x="1395.10" y="1067.01">117.550</text>
+    <text x="1208.80" y="1076.50">118.725</text>
+    <text x="1260.31" y="1155.46">118.000</text>
+    <text x="1208.24" y="1209.91">117.525</text>
+    <text x="1303.74" y="1236.74">116.100</text>
+    <text x="1387.89" y="1217.17">116.050</text>
+    <text x="1461.93" y="1122.28">116.025</text>
+    <text x="1397.13" y="1059.44">117.750</text>
+    <text x="1435.02" y="1330.92">115.200</text>
+    <text x="1386.60" y="1334.92">115.500</text>
+    <text x="1330.24" y="1362.88">115.200</text>
+    <text x="1200.64" y="1498.50">113.700</text>
+    <text x="1400.22" y="1403.49">114.450</text>
+    <text x="1461.25" y="1432.25">113.600</text>
+    <text x="1102.46" y="1069.33">118.900</text>
+    <text x="1142.89" y="1417.91">116.185</text>
+    <text x="1225.16" y="1339.81">115.950</text>
+    <text x="899.47" y="1461.71">116.475</text>
+    <text x="1072.12" y="1511.90">113.925</text>
+    <text x="1121.01" y="1588.44">113.475</text>
+    <text x="891.55" y="1699.47">115.525</text>
+    <text x="1009.44" y="1709.32">114.000</text>
+    <text x="883.85" y="1716.21">114.935</text>
+    <text x="1090.34" y="1712.08">113.225</text>
+    <text x="1154.47" y="1721.45">112.650</text>
+    <text x="1180.36" y="1715.13">112.850</text>
+    <text x="1008.24" y="1725.08">113.410</text>
+    <text x="1136.14" y="1735.12">112.060</text>
+    <text x="1191.67" y="1735.48">112.060</text>
+    <text x="1199.02" y="1733.05">112.000</text>
+    <text x="1253.05" y="1737.02">111.475</text>
+    <text x="988.80" y="1628.47">114.875</text>
+    <text x="1120.90" y="1627.36">113.425</text>
+    <text x="1143.51" y="1701.59">112.700</text>
+    <text x="1154.57" y="1635.99">112.925</text>
+    <text x="1146.84" y="1646.58">112.850</text>
+    <text x="1265.26" y="1652.24">111.800</text>
+    <text x="1262.63" y="1712.29">111.600</text>
+    <text x="72.27" y="382.56">123.940</text>
+    <text x="78.65" y="404.63">123.940</text>
+    <text x="83.87" y="419.75">124.440</text>
+    <text x="98.81" y="462.56">124.675</text>
+    <text x="129.92" y="553.21">125.500</text>
+    <text x="1052.35" y="627.21">120.100</text>
+    <text x="1053.93" y="723.06">120.265</text>
+    <text x="1170.37" y="722.30">118.325</text>
+    <text x="1332.28" y="694.54">118.465</text>
+    <text x="370.04" y="423.21">121.800</text>
+    <text x="440.61" y="409.58">120.665</text>
+    <text x="524.16" y="459.61">123.075</text>
+    <text x="392.48" y="454.49">123.750</text>
+    <text x="630.29" y="453.31">121.900</text>
+    <text x="944.99" y="472.64">119.500</text>
+    <text x="688.28" y="385.25">120.250</text>
+    <text x="755.30" y="381.55">119.690</text>
+    <text x="717.48" y="393.56">120.150</text>
+    <text x="658.28" y="232.52">118.000</text>
+    <text x="737.29" y="268.38">116.965</text>
+    <text x="744.41" y="303.61">116.965</text>
+    <text x="749.16" y="327.09">117.290</text>
+    <text x="771.91" y="355.49">117.650</text>
+    <text x="950.11" y="446.08">118.650</text>
+    <text x="1017.80" y="418.80">118.040</text>
+    <text x="1146.58" y="347.20">116.350</text>
+    <text x="1184.85" y="428.56">116.650</text>
+    <text x="447.24" y="679.58">124.350</text>
+    <text x="1060.66" y="693.71">119.675</text>
+    <text x="454.36" y="457.19">123.400</text>
+    <text x="533.93" y="460.08">123.075</text>
+    <text x="648.75" y="453.41">121.900</text>
+    <text x="673.47" y="309.71">118.950</text>
+    <text x="714.96" y="688.99">122.200</text>
+    <text x="632.65" y="689.16">122.800</text>
+    <text x="608.82" y="686.81">123.000</text>
+    <text x="596.91" y="685.50">123.225</text>
+    <text x="513.10" y="682.40">123.675</text>
+    <text x="501.13" y="681.89">123.900</text>
+    <text x="401.57" y="677.62">124.800</text>
+    <text x="294.69" y="673.04">125.300</text>
+    <text x="118.42" y="507.94">124.560</text>
+    <text x="716.40" y="678.01">121.560</text>
+    <text x="590.58" y="652.03">122.550</text>
+    <text x="524.69" y="257.91">117.900</text>
+    <text x="536.41" y="316.89">118.650</text>
+    <text x="495.58" y="672.73">123.310</text>
+    <text x="389.68" y="478.20">123.750</text>
+    <text x="121.74" y="504.85">124.560</text>
+    <text x="1146.27" y="722.84">118.325</text>
+    <text x="1169.98" y="722.67">118.325</text>
+    <text x="338.51" y="674.91">125.150</text>
+    <text x="1205.21" y="472.26">117.100</text>
+    <text x="428.35" y="456.24">123.890</text>
+    <text x="457.53" y="463.55">123.575</text>
+    <text x="403.16" y="385.08">119.850</text>
+    <text x="280.08" y="401.87">122.325</text>
+    <text x="268.68" y="405.45">122.325</text>
+    <text x="1201.25" y="722.59">118.250</text>
+    <text x="1033.17" y="590.89">120.000</text>
+    <text x="1029.09" y="595.50">120.000</text>
+    <text x="135.02" y="362.05">123.450</text>
+    <text x="96.85" y="364.10">123.300</text>
+    <text x="190.25" y="462.28">124.200</text>
+    <text x="160.18" y="545.16">124.950</text>
+    <text x="434.68" y="590.76">124.800</text>
+    <text x="629.30" y="601.67">121.175</text>
+    <text x="647.27" y="602.49">122.325</text>
+    <text x="757.76" y="601.42">121.350</text>
+    <text x="971.87" y="647.02">120.050</text>
+    <text x="967.58" y="633.18">120.000</text>
+    <text x="1084.93" y="403.10">116.400</text>
+    <text x="793.24" y="476.99">120.150</text>
+    <text x="1044.69" y="416.02">116.300</text>
+    <text x="984.47" y="377.05">115.650</text>
+    <text x="942.75" y="344.84">115.200</text>
+    <text x="958.99" y="357.65">115.200</text>
+    <text x="756.00" y="234.49">114.050</text>
+    <text x="594.00" y="290.24">118.325</text>
+    <text x="593.21" y="327.34">119.175</text>
+    <text x="580.98" y="271.27">118.200</text>
+    <text x="584.48" y="252.21">117.900</text>
+    <text x="548.23" y="349.37">119.400</text>
+    <text x="550.71" y="307.85">118.675</text>
+    <text x="528.05" y="262.60">118.050</text>
+    <text x="106.59" y="513.06">125.350</text>
+    <text x="111.51" y="525.98">125.700</text>
+    <text x="122.45" y="558.43">125.700</text>
+    <text x="344.46" y="684.60">125.350</text>
+    <text x="355.53" y="684.45">125.050</text>
+    <text x="407.78" y="686.63">125.000</text>
+    <text x="417.68" y="686.34">124.550</text>
+    <text x="452.21" y="688.14">124.550</text>
+    <text x="462.97" y="687.58">124.100</text>
+    <text x="449.38" y="669.89">123.760</text>
+    <text x="498.41" y="689.45">124.100</text>
+    <text x="511.98" y="690.06">123.875</text>
+    <text x="547.60" y="691.99">123.875</text>
+    <text x="560.86" y="691.95">123.575</text>
+    <text x="595.84" y="693.72">123.425</text>
+    <text x="609.53" y="693.86">123.200</text>
+    <text x="672.53" y="689.13">122.350</text>
+    <text x="659.11" y="688.99">122.800</text>
+    <text x="690.48" y="681.56">121.700</text>
+    <text x="1137.88" y="731.72">118.550</text>
+    <text x="1201.31" y="712.04">117.660</text>
+    <text x="432.81" y="445.19">123.300</text>
+    <text x="447.21" y="446.05">122.850</text>
+    <text x="874.83" y="473.43">120.240</text>
+    <text x="694.62" y="264.40">117.350</text>
+    <text x="691.37" y="285.70">118.075</text>
+    <text x="703.64" y="340.34">119.375</text>
+    <text x="485.59" y="447.27">122.400</text>
+  </g>
+  <defs>
+    <linearGradient id="leg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dc0000" />
+      <stop offset="25%" stop-color="#f0dc00" />
+      <stop offset="50%" stop-color="#00c850" />
+      <stop offset="75%" stop-color="#00a0dc" />
+      <stop offset="100%" stop-color="#0000b4" />
+    </linearGradient>
+  </defs>
+  <rect x="1540" y="40" width="14" height="140" fill="url(#leg)" stroke="#444" stroke-width="0.5" />
+  <text x="1537" y="43.0" font-family="monospace" font-size="8" fill="#aaa" text-anchor="end">125.700m</text>
+  <text x="1537" y="183.0" font-family="monospace" font-size="8" fill="#aaa" text-anchor="end">111.475m</text>
+  <text x="40" y="32" font-family="monospace" font-size="11" fill="#666">10f5b984-baae-460b-9c7d-bb48978f365b.dxf  |  177 pts  |  Z [111.475–125.700m]  |  BNG EPSG:27700  |  1px=0.1670m</text>
+</svg>

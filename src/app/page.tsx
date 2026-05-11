@@ -53,6 +53,16 @@ export default function Home() {
         <button style={{...btnStyle(tab === "planos"), borderLeft: "2px solid #555", marginLeft: 8}} onClick={() => setTab("planos")}>▦ Planos SVG</button>
 
         <div style={{ marginLeft: "auto", display: "flex", gap: 6, alignItems: "center" }}>
+          <a
+            href="/projects"
+            style={{
+              padding: "5px 12px", background: "#1a1a2e", color: "#818cf8",
+              border: "1px solid #3730a3", fontFamily: "monospace", fontSize: 11,
+              textDecoration: "none", borderRadius: 3,
+            }}
+          >
+            ⬡ GIS Projects
+          </a>
           {exp && (
             <a
               href={`/exports/${exp.file}`}

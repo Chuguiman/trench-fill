@@ -1,0 +1,20 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: TRENCH·FILL
+      - generic [ref=e5]: /
+      - generic [ref=e6]: Projects
+      - link "← Viewer" [ref=e7] [cursor=pointer]:
+        - /url: /
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic [ref=e11]: Projects
+          - button "+ New" [ref=e12] [cursor=pointer]
+        - generic [ref=e14]: Loading…
+      - generic [ref=e17]:
+        - generic [ref=e18]: ▦
+        - text: Select or create a project
+  - button "Open Next.js Dev Tools" [ref=e24] [cursor=pointer]:
+    - img [ref=e25]
+  - alert [ref=e28]

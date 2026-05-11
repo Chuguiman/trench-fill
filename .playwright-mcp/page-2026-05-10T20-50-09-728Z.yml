@@ -1,0 +1,59 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]: TRENCH·FILL
+      - generic [ref=e5]: /
+      - generic [ref=e6]: Projects
+      - link "← Viewer" [ref=e7] [cursor=pointer]:
+        - /url: /
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic [ref=e11]: Projects
+          - button "+ New" [ref=e12] [cursor=pointer]
+        - generic [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]:
+            - generic [ref=e31]: Preston
+            - generic [ref=e32]: EPSG:27700 · 10/05/2026
+          - button "×" [ref=e33]
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - generic [ref=e17]:
+            - generic [ref=e18]: Preston
+            - generic [ref=e1936]: "25.142"
+          - generic [ref=e1937]: EPSG:27700 · 128301c3
+        - generic [ref=e1938]:
+          - generic [ref=e1939]:
+            - generic [ref=e1940]: Upload DXF
+            - generic [ref=e1941] [cursor=pointer]:
+              - generic [ref=e1942]: ⬆
+              - generic [ref=e1943]: Drag .dxf here or click to select
+          - generic [ref=e1944]:
+            - generic [ref=e1945]:
+              - generic [ref=e1946]: Layers
+              - button "↻ Refresh" [ref=e1947] [cursor=pointer]
+            - generic [ref=e1948]:
+              - generic [ref=e1949]:
+                - generic [ref=e1951]:
+                  - generic [ref=e1952]: XREF_Civils_External levels
+                  - generic [ref=e1953]: XREF_Civils_External levels.dxf · 10/05/2026, 21:47:06
+                - generic [ref=e1954]: interpolated
+                - button "▦ Grid" [ref=e1955] [cursor=pointer]
+                - button "⬡ SVG Plan" [ref=e1956] [cursor=pointer]
+                - button "×" [ref=e1957] [cursor=pointer]
+              - generic [ref=e1958]:
+                - generic [ref=e1959]:
+                  - generic [ref=e1960]: Survey pts
+                  - generic [ref=e1961]: "177"
+                - generic [ref=e1962]:
+                  - generic [ref=e1963]: Polylines
+                  - generic [ref=e1964]: "825"
+                - generic [ref=e1965]:
+                  - generic [ref=e1966]: Grid cells
+                  - generic [ref=e1967]: 61,479
+                - generic [ref=e1968]:
+                  - generic [ref=e1969]: Z range
+                  - generic [ref=e1970]: 111.47 – 125.70m
+  - button "Open Next.js Dev Tools" [ref=e24] [cursor=pointer]:
+    - img [ref=e25]
+  - alert [ref=e28]
