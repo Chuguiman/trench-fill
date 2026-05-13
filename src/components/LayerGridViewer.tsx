@@ -107,7 +107,7 @@ export default function LayerGridViewer({ layerId, onClose }: { layerId: string;
         const cy = wy(c.y) + sc / 2;
         ctx.shadowColor = "rgba(0,0,0,0.9)";
         ctx.shadowBlur = 2;
-        ctx.fillStyle = c.is_interp ? "#ffffff" : "#86efac";
+        ctx.fillStyle = c.is_interp ? "#ffffff" : "#86EFAC";
         ctx.fillText(c.z.toFixed(2), cx, cy);
       }
       ctx.shadowBlur = 0;
@@ -241,7 +241,7 @@ export default function LayerGridViewer({ layerId, onClose }: { layerId: string;
         <span style={{ fontFamily: "monospace", fontSize: 11, color: "#555" }}>
           {data ? `${data.grid.length.toLocaleString()} cells · ${data.polylines.length} polylines` : ""}
         </span>
-        <span style={{ fontFamily: "monospace", fontSize: 11, color: "#4ade80", flex: 1 }}>{info}</span>
+        <span style={{ fontFamily: "monospace", fontSize: 11, color: "#4E9654", flex: 1 }}>{info}</span>
         <button
           style={{ padding: "4px 12px", background: "#1a1a1a", color: "#888", border: "1px solid #333", borderRadius: 4, cursor: "pointer", fontFamily: "monospace", fontSize: 11 }}
           onClick={() => setFitKey(k => k + 1)}

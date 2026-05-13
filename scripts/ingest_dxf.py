@@ -33,6 +33,7 @@ DXF_PATH = args.dxf
 DB_URL   = args.db
 
 MAX_DIST = 1.0   # INSERT/TEXT label match radius — 1 m, never wider
+WALL_RE = re.compile(r'WALL|RETAINING|BOUNDARY|BUILDING|STRUCTURE|UNDERBUILD|PLOT-WALLS', re.I)
 
 # ── 1. Parse DXF ──────────────────────────────────────────────────────────────
 print(f"Parsing {DXF_PATH}…")
@@ -141,12 +142,12 @@ if grid_w * grid_h > 10_000_000:
     print(f"ERROR: Grid too large ({grid_w}×{grid_h}). Check CRS / coordinates.")
     sys.exit(1)
 
-# Average duplicate points landing on same integer cell
+# Average duplicate points landing on same integer cell -> use MIN for trench bottoms
 real_accum: dict = {}
 for px, py, pz, _ in raw_points:
     key = (int(round(px)), int(round(py)))
     real_accum.setdefault(key, []).append(pz)
-real_map: dict = {k: sum(v) / len(v) for k, v in real_accum.items()}
+real_map: dict = {k: min(v) for k, v in real_accum.items()}
 
 # ── 3. Collect polylines (walls / barriers) ───────────────────────────────────
 print("Processing polylines…")
@@ -167,12 +168,13 @@ for e in msp:
     coords = [(p[0], p[1], elev) for p in pts]
     polylines.append((layer_name, elev if elev else None, coords))
 
-    # All polylines act as barriers for zone flood-fill
-    seg_pts = [(p[0], p[1]) for p in pts]
-    # Filter to site area only
-    in_site = [p for p in seg_pts if x_lo <= p[0] <= x_hi and y_lo <= p[1] <= y_hi]
-    if len(in_site) >= 2:
-        wall_segs.append(LineString(in_site))
+    # Only wall-like layers act as barriers for zone flood-fill
+    if WALL_RE.search(layer_name):
+        seg_pts = [(p[0], p[1]) for p in pts]
+        # Filter to site area only
+        in_site = [p for p in seg_pts if x_lo <= p[0] <= x_hi and y_lo <= p[1] <= y_hi]
+        if len(in_site) >= 2:
+            wall_segs.append(LineString(in_site))
 
 wall_multi = MultiLineString(wall_segs) if wall_segs else None
 print(f"  Polylines: {len(polylines)}  Wall segments: {len(wall_segs)}")
@@ -240,12 +242,14 @@ for cx in range(X0, X1+1):
         if key in real_map:
             cells.append({"x":cx,"y":cy,"z":round(real_map[key],3),"is_interp":False})
         elif key in wall_cells:
-            cells.append({"x":cx,"y":cy,"z":0.0,"is_interp":True})
+            # Wall cells are typically not interpolated if they are the barrier itself
+            continue
         else:
             zid   = cell_zone.get(key)
             reals = zone_reals.get(zid,[]) if zid is not None else []
             if not reals:
-                cells.append({"x":cx,"y":cy,"z":0.0,"is_interp":True})
+                # No data for this zone (e.g. outside or empty building) -> keep void
+                continue
             else:
                 tw = twz = 0.0
                 for rcx,rcy,rz in reals:
@@ -254,31 +258,14 @@ for cx in range(X0, X1+1):
                     tw += w; twz += w*rz
                 cells.append({"x":cx,"y":cy,"z":round(twz/tw,3),"is_interp":True})
 
-# Zero-fix: propagate min non-zero 8-neighbour (up to 20 passes)
-cmap = {(c["x"],c["y"]): c for c in cells}
-changed, passes = True, 0
-while changed and passes < 20:
-    changed = False; passes += 1
-    for c in cells:
-        if c["z"] != 0.0: continue
-        nb = [cmap[n]["z"] for n in eight_nbrs(c["x"],c["y"]) if n in cmap and cmap[n]["z"]>0]
-        if nb:
-            c["z"] = round(min(nb), 3); changed = True
-
-# Final fallback: global min real z
-global_min_z = min(real_map.values()) if real_map else 0.0
-for c in cells:
-    if c["z"] == 0.0:
-        c["z"] = round(global_min_z, 3)
+# Recompute z range from final grid
+all_z = [c["z"] for c in cells if c["z"] > 0]
+z_min = min(all_z) if all_z else 0.0
+z_max = max(all_z) if all_z else 0.0
 
 real_count  = sum(1 for c in cells if not c["is_interp"])
 interp_count= sum(1 for c in cells if c["is_interp"])
 print(f"  Grid cells: {len(cells)}  (real={real_count}  interp={interp_count})")
-
-# Recompute z range from final grid
-all_z = [c["z"] for c in cells if c["z"] > 0]
-z_min = min(all_z) if all_z else z_min
-z_max = max(all_z) if all_z else z_max
 
 # ── 6. Store in DB ────────────────────────────────────────────────────────────
 print("Writing to database…")

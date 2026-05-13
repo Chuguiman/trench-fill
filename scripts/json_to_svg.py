@@ -22,96 +22,83 @@ with open(args.json, 'r') as f:
 entities = data.get('entities', [])
 header = data.get('header', {})
 
-# Robust bounds scanning (like gen_svg.py)
-print("Scanning entities for bounds…")
+# Precise bounds scanning
+print("Scanning entities for project bounds…")
 xs, ys, zs = [], [], []
+survey_xs, survey_ys = [], []
 
 for e in entities:
     t = e['type']
+    layer = e.get('layer', '')
+    p = e.get('position', e.get('center', [0, 0, 0]))
+    
+    # Track everything for filtering
     if t in ('LWPOLYLINE', 'POLYLINE'):
-        for p in e.get('vertices', []):
-            xs.append(p[0]); ys.append(p[1])
-            if len(p) > 2: zs.append(p[2])
+        for v in e.get('vertices', []):
+            xs.append(v[0]); ys.append(v[1])
+            if len(v) > 2: zs.append(v[2])
     elif t == 'LINE':
-        p0, p1 = e['start'], e['end']
-        xs += [p0[0], p1[0]]; ys += [p0[1], p1[1]]
-        zs += [p0[2], p1[2]]
-    elif t in ('TEXT', 'MTEXT'):
-        p = e.get('position', [0, 0, 0])
+        xs += [e['start'][0], e['end'][0]]
+        ys += [e['start'][1], e['end'][1]]
+        zs += [e['start'][2], e['end'][2]]
+    else:
         xs.append(p[0]); ys.append(p[1])
-        # Try to parse Z from text content
-        try:
-            val = float(e['text'].replace('m', ''))
-            if 10 < val < 500: zs.append(val)
-        except:
-            if p[2] != 0: zs.append(p[2])
-    elif t in ('POINT', 'INSERT'):
-        p = e.get('position', [0, 0, 0])
-        xs.append(p[0]); ys.append(p[1])
-        if p[2] != 0: zs.append(p[2])
-    elif t in ('CIRCLE', 'ARC'):
-        c = e['center']
-        r = e['radius']
-        xs += [c[0]-r, c[0]+r]; ys += [c[1]-r, c[1]+r]
-        if c[2] != 0: zs.append(c[2])
+        if len(p) > 2: zs.append(p[2])
+
+    # Specifically track survey points to define the "Real" project area
+    if 'LEVELS' in layer.upper() or t == 'POINT':
+        survey_xs.append(p[0]); survey_ys.append(p[1])
 
 if not xs:
     print("Error: No geometry found.")
     exit(1)
 
-# Filter outliers (IQR) for better framing
+# Use survey points as the primary anchor for bounds if they exist
 import numpy as np
-def get_clean_bounds(arr, k=1.5):
-    if not arr: return 0, 1
-    q1, q3 = np.percentile(arr, 25), np.percentile(arr, 75)
-    iqr = q3 - q1
-    return q1 - k * iqr, q3 + k * iqr
-
-# Project framing bounds
-clean_x0, clean_x1 = get_clean_bounds(xs, k=3.0) # Be generous with project spread
-clean_y0, clean_y1 = get_clean_bounds(ys, k=3.0)
-
-# Filter lists to get tight actual bounds for the project
-xs_filtered = [x for x in xs if clean_x0 <= x <= clean_x1]
-ys_filtered = [y for y in ys if clean_y0 <= y <= clean_y1]
-
-if not xs_filtered:
-    WX0, WX1 = min(xs), max(xs)
-    WY0, WY1 = min(ys), max(ys)
+if survey_xs:
+    # Use 1st and 99th percentile of survey points to avoid rogue points
+    WX0, WX1 = np.percentile(survey_xs, 0.5), np.percentile(survey_xs, 99.5)
+    WY0, WY1 = np.percentile(survey_ys, 0.5), np.percentile(survey_ys, 99.5)
+    print(f"  Bounds anchored by Survey Points: E=[{WX0:.1f},{WX1:.1f}] N=[{WY0:.1f},{WY1:.1f}]")
 else:
-    WX0, WX1 = min(xs_filtered), max(xs_filtered)
-    WY0, WY1 = min(ys_filtered), max(ys_filtered)
-
-# Z range for color ramp (Filter outliers to get meaningful colors)
-if zs:
-    # Use 5-95 percentile to get the core terrain range
-    z_min, z_max = np.percentile(zs, 5), np.percentile(zs, 95)
-    # If the range is still too wide or includes 0, try to focus on the 100m+ range
-    if z_min < 10 and z_max > 50:
-        pos_zs = [z for z in zs if z > 10]
-        if pos_zs:
-            z_min, z_max = np.percentile(pos_zs, 5), np.percentile(pos_zs, 95)
+    # Fallback to IQR filtering of all geometry
+    q1x, q3x = np.percentile(xs, 25), np.percentile(xs, 75)
+    iqrx = q3x - q1x
+    WX0, WX1 = q1x - 2*iqrx, q3x + 2*iqrx
     
-    if z_min == z_max:
-        z_min, z_max = min(zs), max(zs)
-else:
-    z_min, z_max = 0, 1
+    q1y, q3y = np.percentile(ys, 25), np.percentile(ys, 75)
+    iqry = q3y - q1y
+    WY0, WY1 = q1y - 2*iqry, q3y + 2*iqry
+    print(f"  Bounds estimated from all geometry: E=[{WX0:.1f},{WX1:.1f}] N=[{WY0:.1f},{WY1:.1f}]")
 
-print(f"  Refined Bounds: E=[{WX0:.1f},{WX1:.1f}] N=[{WY0:.1f},{WY1:.1f}] Z_ramp=[{z_min:.2f},{z_max:.2f}]")
+# Add 10m buffer
+WX0 -= 10; WX1 += 10; WY0 -= 10; WY1 += 10
 
 # ── 2. SVG coordinate transform ───────────────────────────────────────────────
 PAD   = 40
 W_SVG = 2400
-span_x = WX1 - WX0 if WX1 > WX0 else 1
-span_y = WY1 - WY0 if WY1 > WY0 else 1
-H_SVG = int(W_SVG * span_y / span_x) + 2 * PAD
+span_x = WX1 - WX0
+span_y = WY1 - WY0
 
+# CRITICAL: Scale is pixels-per-meter based on drawing area (W_SVG minus padding)
 scale = (W_SVG - 2 * PAD) / span_x
+# Height must match EXACTLY to maintain 1:1 ratio
+H_SVG = int(span_y * scale) + 2 * PAD
 
 def sx(x): return PAD + (x - WX0) * scale
 def sy(y): return H_SVG - PAD - (y - WY0) * scale   # Y-flip
 
+print(f"  Final SVG: {W_SVG}x{H_SVG} | Scale: {scale:.4f} px/m")
+
 # ── 3. Elevation colour ────────────────────────────────────────────────────────
+# Core terrain range
+z_min, z_max = 100.0, 130.0 # Default for this site
+if zs:
+    z_min, z_max = np.percentile(zs, 5), np.percentile(zs, 95)
+    if z_min < 10: # Filter out 0/nulls
+        pos_zs = [z for z in zs if z > 10]
+        if pos_zs: z_min, z_max = np.percentile(pos_zs, 5), np.percentile(pos_zs, 95)
+
 def elev_color(z, lighten=0):
     if z_max <= z_min: return "#ffffff"
     t = max(0.0, min(1.0, (z - z_min) / (z_max - z_min)))
@@ -145,10 +132,15 @@ svg = ET.Element('svg', {
     'width':   str(W_SVG),
     'height':  str(H_SVG),
     'viewBox': f'0 0 {W_SVG} {H_SVG}',
+    'data-wx0': f'{WX0:.6f}',
+    'data-wy0': f'{WY0:.6f}',
+    'data-scale': f'{scale:.8f}',
+    'data-hsvg': f'{H_SVG}',
+    'data-pad': f'{PAD}',
 })
 
 # Background
-ET.SubElement(svg, 'rect', {'width': str(W_SVG), 'height': str(H_SVG), 'fill': '#0a0a0a'})
+ET.SubElement(svg, 'rect', {'width': str(W_SVG), 'height': str(H_SVG), 'fill': '#212830'})
 
 # Group by layers
 layers_groups = {}
@@ -250,8 +242,8 @@ for e in entities:
             
             if not marker_too_close:
                 ET.SubElement(parent, 'rect', {
-                    'x': f'{cx-0.4:.2f}', 'y': f'{cy-0.4:.2f}',
-                    'width': '0.8', 'height': '0.8', 'fill': color_light, 'opacity': '0.9'
+                    'x': f'{cx-0.6:.2f}', 'y': f'{cy-0.6:.2f}',
+                    'width': '1.2', 'height': '1.2', 'fill': color_light, 'opacity': '0.9'
                 })
             
             if not too_close:
@@ -259,19 +251,19 @@ for e in entities:
                 # Label with shadow
                 st = ET.SubElement(parent, 'text', {
                     'x': f'{cx+1.2:.2f}', 'y': f'{cy+0.6:.2f}',
-                    'font-family': 'monospace', 'font-size': '2.2', 'fill': '#000', 'stroke': '#000', 'stroke-width': '0.2'
+                    'font-family': 'monospace', 'font-size': '1.8', 'fill': '#000', 'stroke': '#000', 'stroke-width': '0.1'
                 })
                 st.text = f"{val:.3f}"
                 t_el = ET.SubElement(parent, 'text', {
                     'x': f'{cx+1.2:.2f}', 'y': f'{cy+0.6:.2f}',
-                    'font-family': 'monospace', 'font-size': '2.2', 'fill': color_light
+                    'font-family': 'monospace', 'font-size': '1.8', 'fill': color_light
                 })
                 t_el.text = f"{val:.3f}"
         else:
             # Descriptive text
             ET.SubElement(parent, 'text', {
                 'x': f'{cx:.2f}', 'y': f'{cy:.2f}',
-                'font-family': 'sans-serif', 'font-size': '2.2', 'fill': '#ffffff', 'opacity': '0.2'
+                'font-family': 'sans-serif', 'font-size': '1.8', 'fill': '#ffffff', 'opacity': '0.2'
             }).text = txt
 
     elif t == 'POINT':
@@ -280,7 +272,7 @@ for e in entities:
         color = elev_color(pos[2], lighten=0.4)
         cx, cy = sx(pos[0]), sy(pos[1])
         # Very tiny dots for points, but lighter
-        ET.SubElement(parent, 'circle', {'cx': f'{cx:.2f}', 'cy': f'{cy:.2f}', 'r': '0.4', 'fill': color, 'opacity': '0.4'})
+        ET.SubElement(parent, 'circle', {'cx': f'{cx:.2f}', 'cy': f'{cy:.2f}', 'r': '0.6', 'fill': color, 'opacity': '0.6'})
 
 # Legend
 LX, LY, LW, LH = W_SVG - 100, PAD, 20, 200

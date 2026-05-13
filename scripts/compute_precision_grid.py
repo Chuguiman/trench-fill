@@ -5,6 +5,7 @@ Implements:
 1. Barrier-aware interpolation (murs/walls block data flow).
 2. Min-Z logic (use lowest elevation in each 1x1m cell).
 3. Zone flood-fill to isolate areas.
+4. Min-Neighbor propagation for barriers and site-limited interpolation.
 """
 import argparse, json, math, re
 import numpy as np
@@ -31,15 +32,19 @@ for e in entities:
     t = e['type']
     if t in ('TEXT', 'MTEXT'):
         try:
-            val = float(e['text'].replace('m', ''))
-            if 50 < val < 250: # Valid survey range
+            # Robust parsing: remove 'm', handle non-numeric prefixes
+            raw = e['text'].strip()
+            # Remove any trailing 'm' or 'M'
+            raw = re.sub(r'[mM]$', '', raw)
+            val = float(raw)
+            if 50 < val < 250: # Valid survey range for this project
                 p = e.get('position', [0, 0, 0])
                 points.append((p[0], p[1], val))
         except:
             pass
     elif t in ('POINT', 'INSERT'):
         p = e.get('position', [0, 0, 0])
-        if abs(p[2]) > 0.1: # Only if it has a real physical Z
+        if abs(p[2]) > 10.0: # Only if it has a real physical Z (usually > 100m in this site)
             points.append((p[0], p[1], p[2]))
 
 if not points:
@@ -60,7 +65,7 @@ print("Detecting wall barriers…")
 walls = [] # List of list of (x, y)
 
 # Layer names that suggest barriers
-WALL_RE = re.compile(r'WALL|RETAINING|BOUNDARY|BUILDING|STRUCTURE', re.I)
+WALL_RE = re.compile(r'WALL|RETAINING|BOUNDARY|BUILDING|STRUCTURE|UNDERBUILD|PLOT-WALLS', re.I)
 
 for e in entities:
     layer = e.get('layer', '0')
@@ -78,7 +83,7 @@ for poly in walls:
     for i in range(len(poly)-1):
         p0, p1 = poly[i], poly[i+1]
         dist = math.hypot(p1[0]-p0[0], p1[1]-p0[1])
-        steps = max(2, int(dist / 0.2)) # 20cm step for rasterization
+        steps = max(2, int(dist / 0.25)) # 25cm step for rasterization
         for s in range(steps + 1):
             tx = p0[0] + (p1[0]-p0[0]) * (s/steps)
             ty = p0[1] + (p1[1]-p0[1]) * (s/steps)
@@ -126,7 +131,7 @@ print(f"  Found {zone_id} separate zones.")
 
 # ── 7. Barrier-Aware Interpolation ───────────────────────────────────────────
 print("Interpolating grid cells…")
-grid_data = []
+grid_data = {} # (x, y) -> {"z": z, "type": type}
 
 for cx in range(X0, X1+1):
     for cy in range(Y0, Y1+1):
@@ -135,41 +140,59 @@ for cx in range(X0, X1+1):
         
         if key in cell_reals:
             # Real point exists in this cell
-            grid_data.append({"x":cx, "y":cy, "z":round(cell_reals[key], 3), "type":"real"})
+            grid_data[key] = {"x":cx, "y":cy, "z":round(cell_reals[key], 3), "type":"real"}
         elif key in wall_cells:
-            # It's a wall cell, maybe take min neighbor?
-            grid_data.append({"x":cx, "y":cy, "z":None, "type":"barrier"})
+            # Barrier cell (initially None, filled later)
+            grid_data[key] = {"x":cx, "y":cy, "z":None, "type":"barrier"}
         elif zid is not None and zid in zone_reals:
             # Interpolate from points in the SAME zone
             reals = zone_reals[zid]
-            # Simple IDW (Inverse Distance Weighting)
             tw = 0.0
             twz = 0.0
             for rx, ry, rz in reals:
                 d2 = (cx-rx)**2 + (cy-ry)**2
-                if d2 == 0: # Should not happen due to cell_reals check above
-                    w = 1.0; d2 = 1.0
-                else:
-                    w = 1.0 / d2
+                w = 1.0 / max(d2, 0.01)
                 tw += w
                 twz += w * rz
             
             z_interp = twz / tw
-            grid_data.append({"x":cx, "y":cy, "z":round(z_interp, 3), "type":"interp"})
-        else:
-            # No data for this zone or cell
-            grid_data.append({"x":cx, "y":cy, "z":None, "type":"void"})
+            grid_data[key] = {"x":cx, "y":cy, "z":round(z_interp, 3), "type":"interp"}
 
-# ── 8. Write Output ───────────────────────────────────────────────────────────
+# ── 8. Propagate Min-Z to barriers and site limits ────────────────────────────
+print("Propagating Min-Z to barriers…")
+for _ in range(3): # Multiple passes
+    changed = False
+    for cx in range(X0, X1+1):
+        for cy in range(Y0, Y1+1):
+            key = (cx, cy)
+            if key in grid_data and grid_data[key]["z"] is None:
+                # Look at 8-neighbors
+                nbs = []
+                for dx in [-1,0,1]:
+                    for dy in [-1,0,1]:
+                        if dx==0 and dy==0: continue
+                        nb_key = (cx+dx, cy+dy)
+                        if nb_key in grid_data and grid_data[nb_key]["z"] is not None:
+                            nbs.append(grid_data[nb_key]["z"])
+                if nbs:
+                    z_min_nb = min(nbs)
+                    grid_data[key]["z"] = round(z_min_nb, 3)
+                    grid_data[key]["type"] = "propa"
+                    changed = True
+    if not changed: break
+
+# ── 9. Write Output ───────────────────────────────────────────────────────────
+# Only keep cells that have a Z value (site-limited)
+final_cells = [v for v in grid_data.values() if v["z"] is not None]
 output = {
     "extents": {"x0":X0, "x1":X1, "y0":Y0, "y1":Y1},
     "cell_size": 1.0,
     "points_count": len(points),
     "zones_count": zone_id,
-    "cells": grid_data
+    "cells": final_cells
 }
 
 with open(args.out, 'w') as f:
     json.dump(output, f, separators=(',', ':'))
 
-print(f"Done: {args.out} ({len(grid_data)} cells)")
+print(f"Done: {args.out} ({len(final_cells)} cells)")

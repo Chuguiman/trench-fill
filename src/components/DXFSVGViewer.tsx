@@ -93,7 +93,7 @@ function renderEntity(e: any, color: string, tx: (x:number)=>number, ty: (y:numb
   }
 }
 
-export default function DXFSVGViewer({ filename, label }: { filename: string; label: string }) {
+export default function DXFSVGViewer({ filename, label, layerId }: { filename: string; label: string; layerId?: string }) {
   const [entities,     setEntities]     = useState<any[]>([]);
   const [layers,       setLayers]       = useState<string[]>([]);
   const [activeLayers, setActiveLayers] = useState<Set<string>>(new Set());
@@ -101,6 +101,9 @@ export default function DXFSVGViewer({ filename, label }: { filename: string; la
   const [bbox,         setBbox]         = useState<BBox>({ minX: 0, maxX: 100, minY: 0, maxY: 100 });
   const [loading,      setLoading]      = useState(true);
   const [error,        setError]        = useState<string | null>(null);
+
+  const [interpCells,  setInterpCells]  = useState<any[]>([]);
+  const [showInterp,   setShowInterp]   = useState(false);
 
   const svgRef   = useRef<SVGSVGElement>(null);
   const [vb, setVb] = useState<VB>({ x: 0, y: 0, w: 800, h: 600 });
@@ -110,33 +113,78 @@ export default function DXFSVGViewer({ filename, label }: { filename: string; la
     setLoading(true); setEntities([]); setError(null);
     let cancelled = false;
 
+    // Load DXF
     fetch(`/api/dxf/${filename}`)
-      .then(r => r.text())
+      .then(async r => {
+        if (!r.ok) {
+          const err = await r.text();
+          throw new Error(`API Error: ${r.status} ${err}`);
+        }
+        return r.text();
+      })
       .then(async text => {
+        if (!text || text.trim().length === 0) {
+          throw new Error('El archivo DXF está vacío');
+        }
         const { DxfParser } = await import('dxf-parser');
-        const parsed = new DxfParser().parseSync(text);
-        if (cancelled) return;
+        const parser = new DxfParser();
+        try {
+          const parsed = parser.parseSync(text);
+          if (cancelled) return;
 
-        const ents: any[] = parsed?.entities || [];
-        const bb = calcBBox(ents);
-        setBbox(bb);
+          const ents: any[] = parsed?.entities || [];
+          const bb = calcBBox(ents);
+          setBbox(bb);
 
-        const layerSet = new Set<string>(ents.map((e: any) => e.layer || '0'));
-        const layerArr = Array.from(layerSet).sort();
-        const colors: Record<string, string> = {};
-        layerArr.forEach((l, i) => { colors[l] = PALETTE[i % PALETTE.length]; });
+          const layerSet = new Set<string>(ents.map((e: any) => e.layer || '0'));
+          const layerArr = Array.from(layerSet).sort();
+          const colors: Record<string, string> = {};
+          layerArr.forEach((l, i) => { 
+            if (l === 'EXP-RETAINING WALLS') {
+              colors[l] = '#7E01FD';
+            } else {
+              colors[l] = PALETTE[i % PALETTE.length]; 
+            }
+          });
 
-        setEntities(ents);
-        setLayers(layerArr);
-        setActiveLayers(new Set(layerArr));
-        setLayerColors(colors);
+          setEntities(ents);
+          setLayers(layerArr);
+          setActiveLayers(new Set(layerArr));
+          setLayerColors(colors);
 
-        const dw = bb.maxX - bb.minX;
-        const dh = bb.maxY - bb.minY;
-        setVb({ x: bb.minX - dw * 0.025, y: bb.minY - dh * 0.025, w: dw * 1.05, h: dh * 1.05 });
-        setLoading(false);
+          const dw = bb.maxX - bb.minX;
+          const dh = bb.maxY - bb.minY;
+          setVb({ x: bb.minX - dw * 0.025, y: bb.minY - dh * 0.025, w: dw * 1.05, h: dh * 1.05 });
+          setLoading(false);
+        } catch (pe: any) {
+          throw new Error(`Error al procesar DXF: ${pe.message}`);
+        }
       })
       .catch(e => { if (!cancelled) { setError(e.message); setLoading(false); } });
+
+    // Load Interpolated JSON if exists
+    const interpUrl = layerId 
+      ? `/exports/${layerId}_interp.json`
+      : `/exports/${filename.replace('.dxf', '')}_interp.json`;
+
+    fetch(interpUrl)
+      .then(r => r.json())
+      .then(data => {
+        if (!cancelled && data.cells) {
+          setInterpCells(data.cells);
+          setShowInterp(true);
+        }
+      })
+      .catch(() => {
+        // Fallback for known UUID filename or if derivation failed
+        const fallbackId = 'a7bd1c9b-fe3f-403d-91cd-9e85d8bc80cd';
+        if (filename.includes('Civils') || layerId === fallbackId || filename.includes('a7bd1c9b')) {
+             fetch(`/exports/${fallbackId}_interp.json`)
+             .then(r => r.json())
+             .then(data => { if (!cancelled && data.cells) { setInterpCells(data.cells); setShowInterp(true); } })
+             .catch(() => {});
+        }
+      });
 
     return () => { cancelled = true; };
   }, [filename]);
@@ -224,6 +272,12 @@ export default function DXFSVGViewer({ filename, label }: { filename: string; la
           </button>
         </div>
         <div style={{ flex: 1, overflowY: 'auto', padding: '4px 0' }}>
+          {interpCells.length > 0 && (
+            <label style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '3px 10px', cursor: 'pointer', background: '#1a1a1a', marginBottom: 4 }}>
+              <input type="checkbox" checked={showInterp} onChange={() => setShowInterp(!showInterp)} />
+              <span style={{ fontSize: 10, fontWeight: 'bold', color: '#f39c12' }}>Malla 1x1m (Interpolada)</span>
+            </label>
+          )}
           {layers.map(l => (
             <label key={l} style={{ display: 'flex', alignItems: 'center', gap: 6, padding: '3px 10px', cursor: 'pointer', opacity: activeLayers.has(l) ? 1 : 0.4 }}>
               <input type="checkbox" checked={activeLayers.has(l)} onChange={() => toggleLayer(l)} style={{ accentColor: layerColors[l] }} />
@@ -243,7 +297,7 @@ export default function DXFSVGViewer({ filename, label }: { filename: string; la
       </div>
 
       {/* SVG area */}
-      <div style={{ flex: 1, position: 'relative', overflow: 'hidden', background: '#111' }}>
+      <div style={{ flex: 1, position: 'relative', overflow: 'hidden', background: '#0a0a0a' }}>
         {loading && (
           <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#888', fontSize: 13 }}>
             Cargando {filename}…
@@ -266,6 +320,41 @@ export default function DXFSVGViewer({ filename, label }: { filename: string; la
             onMouseUp={onMouseUp}
             onMouseLeave={onMouseUp}
           >
+            {/* Interpolated Grid */}
+            {showInterp && interpCells.map((c, i) => {
+              if (c.z === null) return null;
+              const isReal = c.type === 'real';
+              const dotSize = isReal ? 1.5 : 0.8;
+              const dotColor = '#4E9654';
+              const textColor = isReal ? '#f39c12' : '#555';
+              const opacity = isReal ? 1 : 0.6;
+              
+              return (
+                <g key={`cell-${i}`}>
+                  <circle 
+                    cx={tx(c.x)} 
+                    cy={ty(c.y)} 
+                    r={dotSize * scale * 0.1} 
+                    fill={dotColor} 
+                    fillOpacity={opacity}
+                  />
+                  {scale > 10 && (
+                    <text 
+                      x={tx(c.x)} 
+                      y={ty(c.y) - 2} 
+                      fontSize={Math.max(2, 0.4 * scale)} 
+                      fill={textColor} 
+                      fillOpacity={opacity} 
+                      textAnchor="middle"
+                      style={{ pointerEvents: 'none' }}
+                    >
+                      {c.z.toFixed(2)}
+                    </text>
+                  )}
+                </g>
+              );
+            })}
+
             {layers.map(l => (
               activeLayers.has(l) && (
                 <g key={l}>

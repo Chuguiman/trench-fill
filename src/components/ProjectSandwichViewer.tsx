@@ -134,7 +134,7 @@ export default function ProjectSandwichViewer({ projectId, onClose }: { projectI
         <div style={{ flex: 1, overflowY: "auto" }}>
           {layers.map(l => (
             <div key={l.id} style={{ padding: "10px 20px", borderBottom: "1px solid #1a1a1a", display: "flex", alignItems: "center", gap: 10 }}>
-              <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#4ade80" }} />
+              <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#4E9654" }} />
               <div>
                 <div style={{ fontSize: 11, color: "#eee" }}>{l.name}</div>
                 <div style={{ fontSize: 9, color: "#444" }}>{l.category || "General"}</div>
@@ -160,7 +160,7 @@ export default function ProjectSandwichViewer({ projectId, onClose }: { projectI
                     <div style={{ fontSize: 8, color: "#444" }}>{r.category || "—"}</div>
                   </div>
                   <div style={{ textAlign: "right" }}>
-                    <div style={{ fontSize: 14, color: r.found ? "#4ade80" : "#333", fontWeight: "bold" }}>
+                    <div style={{ fontSize: 14, color: r.found ? "#4ADE80" : "#333", fontWeight: "bold" }}>
                       {r.z !== null ? r.z.toFixed(3) : "—"}
                     </div>
                     {r.is_interp && <div style={{ fontSize: 8, color: "#444" }}>interpolated</div>}

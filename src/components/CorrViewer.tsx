@@ -440,9 +440,9 @@ export default function CorrViewer(){
                       </td>
                       <td style={{padding:"5px 12px"}}>
                         <span style={{fontSize:9,padding:"2px 8px",borderRadius:100,
-                          color:isBuilding?"#A78BFA":c.si===0&&c.ci===0?"#4ADE80":"#94A3B8",
-                          border:`1px solid ${isBuilding?"#4c1d95":c.si===0&&c.ci===0?"#4ADE8040":"#33415540"}`,
-                          background:isBuilding?"#1e0b3a":c.si===0&&c.ci===0?"#4ADE8015":"#33415515"}}>
+                          color:isBuilding?"#A78BFA":c.si===0&&c.ci===0?"#4E9654":"#94A3B8",
+                          border:`1px solid ${isBuilding?"#4c1d95":c.si===0&&c.ci===0?"#4E965440":"#33415540"}`,
+                          background:isBuilding?"#1e0b3a":c.si===0&&c.ci===0?"#4E965415":"#33415515"}}>
                           {isBuilding?"edificio":c.si===0&&c.ci===0?"2×real":"interpolado"}
                         </span>
                       </td>

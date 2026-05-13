@@ -8,19 +8,21 @@ import ArchViewer from "@/components/ArchViewer";
 import CorrViewer from "@/components/CorrViewer";
 import DXFSVGViewer from "@/components/DXFSVGViewer";
 
-type Tab = "survey" | "civils" | "arch" | "corr" | "topo" | "planos";
+type Tab = "survey" | "civils" | "interp" | "arch" | "corr" | "topo" | "planos";
 
 const EXPORTS: Record<string, { file: string; label: string }> = {
   survey: { file: "XREF_Survey_Grid.dxf",         label: "Survey Grid" },
   civils: { file: "XREF_Civils_Grid.dxf",         label: "Civils Grid" },
+  interp: { file: "XREF_Civils_Interp_MinZ.dxf",   label: "Civils Interp Min-Z" },
   arch:   { file: "XREF_Arch_Grid.dxf",           label: "Arch Grid" },
   corr:   { file: "XREF_Corr_SurveyCivils.dxf",   label: "Correlación" },
 };
 
-type PlanosTab = "survey" | "civils" | "arch" | "corr";
+type PlanosTab = "survey" | "civils" | "interp" | "arch" | "corr";
 const PLANOS: Record<PlanosTab, { file: string; label: string }> = {
   survey: { file: "XREF_Survey_Grid.dxf",       label: "Survey Grid" },
   civils: { file: "XREF_Civils_Grid.dxf",       label: "Civils Grid" },
+  interp: { file: "XREF_Civils_Interp_MinZ.dxf", label: "Civils (Interp Min-Z)" },
   arch:   { file: "XREF_Arch_Grid.dxf",         label: "Arch Grid"   },
   corr:   { file: "XREF_Corr_SurveyCivils.dxf", label: "Correlación" },
 };
@@ -47,6 +49,7 @@ export default function Home() {
       <div style={{ display: "flex", gap: 3, padding: "5px 10px", background: "#111", borderBottom: "1px solid #333", alignItems: "center", flexWrap: "wrap" }}>
         <button style={btnStyle(tab === "survey")} onClick={() => setTab("survey")}>Survey</button>
         <button style={btnStyle(tab === "civils")} onClick={() => setTab("civils")}>Civils</button>
+        <button style={{...btnStyle(tab === "interp"), background: tab === "interp" ? "#f39c12" : "#222"}} onClick={() => setTab("interp")}>Civils Interp (Min-Z)</button>
         <button style={btnStyle(tab === "arch")}   onClick={() => setTab("arch")}>Arch Site</button>
         <button style={btnStyle(tab === "corr")}   onClick={() => setTab("corr")}>Correlación</button>
         <button style={btnStyle(tab === "topo")}   onClick={() => setTab("topo")}>Topo DXF</button>
@@ -93,6 +96,11 @@ export default function Home() {
       <div style={{ flex: 1, overflow: "auto" }}>
         {tab === "survey"  && <SurveyViewer />}
         {tab === "civils"  && <CivilsViewer />}
+        {tab === "interp"  && (
+           <div style={{ height: "100%", overflow: "hidden" }}>
+             <DXFSVGViewer filename="XREF_Civils_Interp_MinZ.dxf" label="Civils Interp (Min-Z)" />
+           </div>
+        )}
         {tab === "arch"    && <ArchViewer />}
         {tab === "corr"    && <CorrViewer />}
         {tab === "topo"    && <TopoViewer />}
@@ -118,3 +126,4 @@ export default function Home() {
     </div>
   );
 }
+

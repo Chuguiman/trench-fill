@@ -113,6 +113,7 @@ export default function ProjectsPage() {
   const [confirmDel, setConfirmDel]   = useState<string | null>(null); // project id
   const [gridLayer, setGridLayer]     = useState<string | null>(null);
   const [svgUrl,    setSvgUrl]        = useState<string | null>(null);
+  const [activeLayerId, setActiveLayerId] = useState<string | null>(null);
 
   // New project form
   const [showNewProj, setShowNewProj] = useState(false);
@@ -210,7 +211,13 @@ export default function ProjectsPage() {
     <div style={s.page}>
       {gridLayer && <LayerGridViewer layerId={gridLayer} onClose={() => setGridLayer(null)} />}
 
-      {svgUrl && <SvgPlanViewer url={svgUrl} onClose={() => setSvgUrl(null)} />}
+      {svgUrl && (
+        <SvgPlanViewer 
+          url={svgUrl} 
+          layerId={activeLayerId || undefined}
+          onClose={() => { setSvgUrl(null); setActiveLayerId(null); }} 
+        />
+      )}
       {/* Topbar */}
       <div style={s.topbar}>
         <span style={s.logo}>TRENCH·FILL</span>
@@ -351,18 +358,15 @@ export default function ProjectsPage() {
                         <span style={{ fontSize: 10, padding: "2px 7px", borderRadius: 10, background: CHIP_BG[l.status] ?? "#1a1a1a", color: CHIP_FG[l.status] ?? "#555" }}>
                           {l.status}
                         </span>
-                        {l.status === "interpolated" && (<>
+                        {l.status === "interpolated" && (l.metadata as Record<string,unknown>)?.svg_path && (
                           <button
-                            style={{ padding: "2px 9px", background: "#0f1a2e", color: "#60a5fa", border: "1px solid #1e3a5f", borderRadius: 4, cursor: "pointer", fontFamily: "monospace", fontSize: 10, whiteSpace: "nowrap" as const }}
-                            onClick={() => setGridLayer(l.id)}
-                          >▦ Grid</button>
-                          {(l.metadata as Record<string,unknown>)?.svg_path && (
-                            <button
-                              style={{ padding: "2px 9px", background: "#0f1a0f", color: "#4ade80", border: "1px solid #166534", borderRadius: 4, cursor: "pointer", fontFamily: "monospace", fontSize: 10, whiteSpace: "nowrap" as const }}
-                              onClick={() => setSvgUrl(String((l.metadata as Record<string,unknown>).svg_path))}
-                            >⬡ SVG Plan</button>
-                          )}
-                        </>)}
+                            style={{ padding: "2px 9px", background: "#0f1a0f", color: "#4ade80", border: "1px solid #166534", borderRadius: 4, cursor: "pointer", fontFamily: "monospace", fontSize: 10, whiteSpace: "nowrap" as const }}
+                            onClick={() => { 
+                              setSvgUrl(String((l.metadata as Record<string,unknown>).svg_path)); 
+                              setActiveLayerId(l.id); 
+                            }}
+                          >⬡ SVG Plane</button>
+                        )}
                         <button style={{ ...s.delBtn, color: "#333" }} title="Delete layer"
                           onClick={() => deleteLayer(l.id)}>×</button>
                       </div>
